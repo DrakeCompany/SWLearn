@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Antal és Bandi csodaamőbája</title>
+	<style>
+		.field {
+			width: 32%;
+			display: inline-block;
+			text-align: center;
+			border: 1px solid black;
+			height: 100%;
+			line-height: 100%;
+			font-size: 50px;
+		}
+		.row {
+			height: 33%;
+		}
+	</style>
+</head>
+<body>
+	<div id="board" style="position: absolute; left: 100px; right: 100px; bottom:100px; top: 100px;">
+		<div class="row">
+			<span id="field_0_0" class="field">&nbsp;</span><span id="field_0_1" class="field">&nbsp;</span><span id="field_0_2" class="field">&nbsp;</span>
+		</div>
+		<div class="row">
+			<span id="field_1_0" class="field">&nbsp;</span><span id="field_1_1" class="field">&nbsp;</span><span id="field_1_2" class="field">&nbsp;</span>
+		</div>
+		<div class="row">
+			<span id="field_2_0" class="field">&nbsp;</span><span id="field_2_1" class="field">&nbsp;</span><span id="field_2_2" class="field">&nbsp;</span>
+		</div>
+	</div>
+	<button id="reset-btn" type="button">Még egyszer!</button>
+	<div>Következő játékos: <span id="next-player">X</span></div>
+
+
+<script type="text/javascript">
+var xComesNext = true;
+
+var fields = document.getElementsByClassName('field');
+Array.prototype.filter.call(fields, function(field) {
+		field.addEventListener('click', function(){
+			if(this.innerHTML !== '&nbsp;') {
+				alert('Ott már van bábu. Figyelj már oda, mit csinálsz!');
+			} else {
+				this.innerHTML = xComesNext ? 'X' : 'O';
+				xComesNext = !xComesNext;
+				document.getElementById('next-player').innerHTML = xComesNext ? 'X' : 'O';
+			}
+	})
+});
+
+document.getElementById('reset-btn').addEventListener('click', function() {
+	var fields = document.getElementsByClassName('field');
+	Array.prototype.filter.call(fields, function(field) {
+			field.innerHTML = '&nbsp;';
+	});
+});
+
+</script>
+
+</body>
