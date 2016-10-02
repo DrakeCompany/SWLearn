@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TicTacToe</title>
+</head>
+
+<style type="text/css">
+
+#tictactoe {
+	width: 600px; 
+	height: 600px; 
+	margin: auto; 
+	margin-top: 50px; 
+	background: black;
+	overflow: hidden;
+}
+
+#tictactoe .cell {
+	width: 198px;
+	height: 198px;
+	background: white;
+	float: left;
+	margin: 1px;
+	font-size: 150px;
+	line-height: 198px;
+	text-align: center;
+}
+
+#tictactoe .cell:hover {
+	cursor: pointer;
+} 
+
+.x:after {
+	content: "x";
+}
+
+.o:after {
+	content: "o";
+}
+
+</style>
+
+<body>
+
+<div id="tictactoe">
+	<div id="cell-1" class="cell"></div>
+	<div id="cell-2" class="cell"></div>
+	<div id="cell-3" class="cell"></div>
+	<div id="cell-4" class="cell"></div>
+	<div id="cell-5" class="cell"></div>
+	<div id="cell-6" class="cell"></div>
+	<div id="cell-7" class="cell"></div>
+	<div id="cell-8" class="cell"></div>
+	<div id="cell-9" class="cell"></div>
+</div>
+
+<script type="text/javascript">
+	var players = ['x','o'];
+	var step = 0;
+
+	var cells = document.querySelectorAll(".cell");
+	for(var i=0; i<cells.length; i++) {
+		var cell = cells[i];
+		cell.addEventListener('click',function(e) {
+			this.className += " "+players[step++%2];
+		});
+	}
+</script>
+
+</body>
+</html>
