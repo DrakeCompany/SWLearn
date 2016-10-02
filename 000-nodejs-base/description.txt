@@ -1,0 +1,70 @@
+Node.JS
+* A cél egy Node.JS alapú Hello World alkalmazás elkészítése Unit teszt-tel
+
+1. Node.JS (npm) install
+ - http://nodejs.org/download/
+
+2. Installáld a WebStorm-ot
+ - https://www.jetbrains.com/webstorm/download/
+
+3. Hello World
+ - Hozz létre egy új project-et 'hello' névvel
+ - Hozd létre az 'app.js' filet
+ - Írd meg az alábbi kódot: console.log("Hello World!");
+ - Add ki a WebStorm termináljában az alábbi parancsot: 'node app.js'
+
+4. Alakítsd át a projektet, hogy tesztelhető legyen
+ - Hozz létre egy 'js' mappát
+ - Hozz létre egy 'spec' mappát
+ - Másold át az 'app.js' file-t a 'js' mappába
+
+5. Installáld a Karma keretrendszert a projekthez
+ - Installáld a ‘karma-cli’-t
+  * WebStorm terminálban add ki az ‘npm install -g karma-cli’ parancsot
+ - WebStorm terminálban add ki az 'npm install karma' parancsot
+  * lokálisan telepíti a karma modul-t az npm-mel (node package manager)
+ - Add ki a 'karma init karma.conf.js' parancsot
+  * Létrehoz egy config file-t a karma-hoz
+ -  Válaszd ki a 'jasmine' testing framework-öt (ez az alap beállítás, csak nyomj egy entert)
+ - Require.js-re nem lesz szükség, válaszd a 'no'-t
+ - Válaszd ki a 'PhantomJS' böngészőt a tesztek futtatásához (fel-le nyilak segítségével tudsz választani, majd enter)
+ - Add meg a korábban létrehozott két mappát, ahol a kódot és a hozzá tartozó teszteket fogja keresni a Karma
+  * 'js/*.js'
+  * 'spec/*Spec.js'
+ - A következő kérdésnél most nem akarunk semmit kizárni, nyomj egy enter-t
+ - Engedélyezzük ('yes') a Karma-nak a watch opciót, hogy folyamatosan minden file mentés után lefussanak a tesztek
+ - Add ki terminálban a 'karma start karma.conf.js' parancsot
+  * Ezzel elindítod a Karma-t és folyamatosan figyelni fogja a kódod változásait
+
+6. Írjuk meg az első teszt esetet
+ - Ismerkedj meg azzal, hogyan kell Jasmine alapú teszteket írni
+  * http://jasmine.github.io/2.1/introduction.html
+ - Hozd létre a 'spec' mappában a 'helloSpec.js' file-t
+ - Írd meg benne az első unit tesztet
+  * Másold ki a fenti oldalról az első tesztesetet (ha szükséges)
+  * Írd át a 'describe' és 'it' részeknél értelemszerűen a szöveget
+  * A teszted nézzen ki az alábbi módon: expect(hello("World")).toBe("Hello World!");
+ - Mentsd el a kódot és figyeld meg a terminálban a hiba üzenetet
+ - Válts át az 'app.js' file-ra és töröld ki annak tartalmát
+ - Valósítsd meg a 'hello' függvényt
+  * var hello = function(name) { return "Hello World!"; }
+ - Mentsd el a kódot és nézd meg, ahogy a korábbi teszteset zöldre vált
+ - Válts vissza a 'helloSpec.js' file-ra és egészítsd ki a tesztet
+  * Add hozzá az alábbi sort: expect(hello("MyName")).toBe("Hello MyName!");
+ - Mentsd el a kódot és figyeld meg, hogy a teszt eltörik és pirosra vált
+ - Válts ismét az 'app.js' file-ra és írd át a hello függvényt, hogy a tesztnek megfelelően működjön
+  * var hello = function(name) { return "Hello "+name+"!"; }
+  
+Git
+
+1. Installáld a git-et a gépeden
+ * http://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+2. Olvasd el a belső tudástárat a Git-tel kapcsolatban
+ * http://pegasus.dolphio.hu:9990/pages/viewpage.action?pageId=8323664
+ * http://pegasus.dolphio.hu:9990/display/SW/Git
+3. Ismerkedj meg a git alapjaival
+ * http://git-scm.com/book/en/v1/Getting-Started
+ * Állítsd be a configban a felhasználó neved és email címed (használd a jól megszokott vezeteknev.keresztnev alakot)
+ * Állítsd be a configban a számodra megfelelő editor-t és merge tool-t
+ * Inicializáld a 'hello' mappát
+ * Commitold a mappa tartalmát
