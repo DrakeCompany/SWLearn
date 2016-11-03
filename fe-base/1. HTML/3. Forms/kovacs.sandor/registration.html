@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="description" content="Free Web tutorials"/>
+    <meta name="keywords" content="HTML5,html"/>
+    <meta name="author" content="Kovacs Sandor"/>
+    <title>Registration</title>
+</head>
+<hr/>
+<body>
+<header>
+    <h1>Regisztráció</h1>
+</header>
+<hr/>
+<section role="main">
+    <div>
+        <form method="post" accept-charset="utf-8" autocomplete="off" enctype="multipart/form-data" name="reg">
+            <div>
+                <fieldset>
+                    <legend>Személyes adataid</legend>
+                    <div>
+                        <label for="country">Ország:</label><br/>
+                        <input type="text" name="country" id="country" value="Magyarország" readonly/>
+                    </div>
+                    <div>
+                        <label for="firstname">Vezeték név:</label><br/>
+                        <input type="text" name="firstname" id="firstname" required="required" maxlength="10"
+                               autofocus="on" placeholder="Vezeték név"/>
+                    </div>
+                    <div>
+                        <label for="lastname">Kereszt név:</label><br/>
+                        <input type="text" name="lastname" id="lastname" required="required" maxlength="10"
+                               placeholder="Kereszt név"/>
+                    </div>
+                    <div>
+                        <label>Email címed:</label><br/>
+                        <input type="email" name="email" autocomplete="on" required="required"
+                               placeholder="Email címed"/>
+                    </div>
+                    <div>
+                        <label for="password1">Jelszó:</label><br/>
+                        <input type="password" name="password1" id="password1"
+                               pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,12}"
+                               title="minimum 6 karakter, aminek kell tartalmaznia minimum 1 számot, egy kis-és egy nagybetűt!"
+                               required="required" placeholder="Jelszó"/>
+                    </div>
+                    <div>
+                        <label for="password2">Jelszó mégegyszer:</label><br/>
+                        <input type="password" name="password2" id="password2"
+                               pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,12}"
+                               title="minimum 6 karakter!" required="required" placeholder="Jelszó mégegyszer"/>
+                    </div>
+                    <div>
+                        <label for="gender">Nemed:</label><br/>
+                        <input type="radio" name="gender" id="gender" value="male" checked/>Férfi<br/>
+                        <input type="radio" name="gender" value="female"/>Nő<br/>
+                        <input type="radio" name="gender" value="other"/>Egyéb<br/>
+                    </div>
+                    <br/>
+
+                    <div>
+                        <label>Születésed dátuma:(1900 után)</label>
+                        <input type="date" name="born_date" id="born_date" required="required" min="1900-01-01"/>
+                    </div>
+                    <br/>
+
+                    <div>
+                        <label for="url">Saját weboldalad URL-je:</label>
+                        <input type="url" name="url" id="url" autocomplete="on" required="required"
+                               placeholder="http://valami.com"/>
+                    </div>
+                    <br/>
+
+                    <div>
+                        <label for="cv">Itt tudod feltölteni az önéletrajzod: </label>
+                        <input type="file" name="cv" id="cv" required="required"/>
+                    </div>
+                    <br/>
+
+                    <div>
+                        <label for="home_phone_country_number">Otthoni telefonszámod:</label>
+                        <input type="tel" name="home_phone_country_number" id="home_phone_country_number" value="+36"
+                               disabled>
+                        <input type="tel" name="homePhone" id="homePhone" pattern="[0-9]{8}"
+                               title="Kezd a körzetszámmal, max 8 szám!" required="required"/>
+                    </div>
+                    <br/>
+
+                    <div>
+                        <label for="terms_and_conditions"><a href="term_of_service.html" target="_blank">A felhasználói
+                            feltételeket elfogadom</a></label>
+                        <input type="checkbox" id="terms_and_conditions" name="terms_and_conditions"
+                               required="required"/>
+                    </div>
+                    <div>
+                        <label>Kérek hírlevelet:</label>
+                        <input type="checkbox" id="newsletter" name="newsletter" checked/>
+                    </div>
+                    <br/>
+
+                    <div>
+                        <input type="submit" value="Elküld" formtarget="_self"/>
+                    </div>
+                </fieldset>
+            </div>
+        </form>
+    </div>
+</section>
+</body>
+</html>

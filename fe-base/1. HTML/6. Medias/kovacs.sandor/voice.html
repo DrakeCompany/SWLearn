@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="description" content="Free Web tutorials"/>
+    <meta name="keywords" content="HTML5,html"/>
+    <meta name="author" content="Kovacs Sandor"/>
+    <title>Music</title>
+
+</head>
+<hr/>
+<body>
+<header>
+    <h1>Voice</h1>
+</header>
+<hr/>
+<div class="content">
+    <section class="main">
+        <div><label for="audio1">Nyeríts!</label></div>
+        <div>
+            <audio controls id="audio1">
+                <source src="Horse-nay.mp3" type="audio/mp3"/>
+            </audio>
+        </div>
+        <div><label for="audiio2">Gong:</label></div>
+        <div>
+            <iframe id="audiio2" src="https://drive.google.com/file/d/0B4T-dSmHD8RVQkRtSmxFcEJrRTg/preview" width="400"
+                    height="100"></iframe>
+        </div>
+        <div>
+            <div><label>Saját gombos lejétszó:</label></div>
+            <div>
+                <button onclick="playPause()">Play/Pause</button>
+                <button onclick="jumpForward()">Forward</button>
+                <button onclick="jumpRearwards()">Rearwards</button>
+                <button onclick="speedFaster()">Faster</button>
+                <button onclick="speedSlower()">Slower</button>
+            </div>
+            <audio controls="" id="audio3">
+                <source src="Horse-nay.mp3" type="audio/mp3"/>
+            </audio>
+        </div>
+    </section>
+</div>
+</body>
+</html>

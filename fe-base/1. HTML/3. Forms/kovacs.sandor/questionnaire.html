@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="description" content="Free Web tutorials"/>
+    <meta name="keywords" content="HTML5,html,questionnaire"/>
+    <meta name="author" content="Kovacs Sandor"/>
+    <title>Questinaire</title>
+</head>
+<hr/>
+<body>
+<header>
+    <h1>Könyvtári kérdőív</h1>
+</header>
+<hr/>
+<section role="main">
+    <fieldset>
+        <legend>Könyvtári kérdőív</legend>
+        <form method="get" name="questions" enctype="text/plain" oninput="x.value=parseInt(satisfaction.value)">
+            <div>
+                <label for="favorite_books">Milyen témában olvasol könyveket:</label><br/>
+                <select name="favorite_books" id="favorite_books" required="required" multiple>
+                    <optgroup label="Irodalmi könyvek">
+                        <option value="drama">Dráma</option>
+                        <option value="lira" selected>Líra</option>
+                        <option value="epika">Epika</option>
+                    </optgroup>
+                    <optgroup label="Egyéb">
+                        <option value="krime">Krimi</option>
+                        <option value="horror">Horror</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <label for="textInputBook">Ha nem volt fent a kedvenc könytipusod,akkor ide írd le, hogy melyik az, és
+                    miért:</label><br/>
+                <textarea name="textInputBook" id="textInputBook" role="textbox" rows="4" cols="40" draggable="false"
+                          required="required">Kedvenc könyved:</textarea>
+            </div>
+            <br/>
+
+            <div>
+                <label for="myBrowser">Milyen böngészőt használsz?:
+                    <input list="browsers" name="myBrowser" id="myBrowser" required="required"/></label>
+                <datalist id="browsers">
+                    <option value="Chrome">
+                    <option value="Firefox">
+                    <option value="Internet Explorer">
+                    <option value="Opera">
+                    <option value="Safari">
+                    <option value="Microsoft Edge">
+                </datalist>
+            </div>
+            <br/>
+
+            <div>
+                <label for="read_books">Hány könyvet olvastál ki az elmult hónapban?</label>
+                <input type="number" required="required" name="read_books" id="read_books" min="0" max="10">
+            </div>
+            <div>
+                <label for="color">Milyen színüre szeretnéd a könyvtár olvasószobájának a falát?</label>
+                <input type="color" name="color" id="color">
+            </div>
+            <br/>
+
+            <div>
+                <label for="country_code">Add meg az országkódod:</label>
+                <input type="text" name="country_code" id="country_code" pattern="[A-Za-z]{3}"
+                       title="Három betű az országkód!"
+                       required="required">
+            </div>
+            <div>
+                <p> 0%<input type="range" id="satisfaction" name="satisfaction" required="required">100% <label
+                        for="satisfaction">Mikor
+                    szükséged volt egy könyvre a könyvtárból hány százalékban találtad meg itt? </label>:
+                    <output name="x" for="satisfaction"></output>
+                    %
+                </p>
+            </div>
+            <div>
+                <input type="submit" value="Elküld">
+                <input type="reset" value="Alaphelyzetbe állít"
+                       onclick="alert('A kérdőívet alaphelyzetbe állítottad!')">
+            </div>
+        </form>
+    </fieldset>
+</section>
+</body>
+</html>

@@ -1,0 +1,152 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+nav{
+    background-color : #BBE;
+    display: inline-block;
+    font-size: 22px;
+    height:25px;
+    left: 0;
+    min-width:480px;
+    padding: 10px;
+    position: fixed;
+    text-align: left;
+    top: 0;
+    width: 100%;
+}
+nav a{
+    background-color:#88F ;
+    border-radius: 7px;
+    color: white;
+    padding: 3px;
+    text-decoration: none;
+}
+nav a:hover{
+    background-color: #66F;
+}
+button#name_button{
+    padding: 3px;
+    float: right;
+    margin-right:15px;
+
+}
+.content{
+    margin: 2px;
+    position: relative;
+}
+
+#left{
+    position: absolute;
+    background-color: #c7c2ff;
+    width:50%;
+    left: 0;
+    top: 50px;
+    padding-bottom: 10px;
+
+}
+#right{
+    position: absolute;
+    right: 0;
+    top: 50px;
+    border: 1px solid black;
+    background-color: white;
+    width: 50%;
+}
+
+.article{
+    background-color: whitesmoke;
+    position: relative;
+}
+.topic_title{
+    font-size: x-large;
+    display: block;
+}
+.topic_data{
+    padding-right: 2px;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+}
+.coments_content{
+    background-color: #e3e3ff;
+    padding: 10px;
+}
+.coment{
+    margin:3px;
+    background-color: #c7c2ff;
+}
+.coment_user_name{
+    font-weight: bold;
+}
+.joke_label{
+    font-size: x-large;
+}
+/*#styles{
+    background-color:#88F ;
+    border-radius: 7px;
+    color: white;
+    padding: 3px;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    bottom:5px;
+    left: 30%;
+    font-family: Arial, Helvetica, sans-serif;
+}*/
+.dropbtn {
+   /* background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;*/
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-flex;
+    max-height: 20px;
+
+    background-color:#88F ;
+    border-radius: 7px;
+    color: white;
+    padding: 3px;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    bottom:5px;
+    left: 30%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 3px;
+    text-decoration: none;
+    display: block;
+    float: right;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: inline-flex;
+    align-items: flex-start;
+
+
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}

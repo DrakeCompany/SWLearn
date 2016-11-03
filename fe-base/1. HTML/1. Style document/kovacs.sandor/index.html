@@ -1,0 +1,271 @@
+<!DOCTYPE  html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML5,html">
+    <meta name="author" content="Kovacs Sandor">
+    <title>Title: Weblap_címe</title>
+
+    <link rel="stylesheet" type="text/css" href="../../../2.%20CSS/1.%20Style%20document/kovacs.sandor/index.css">
+
+
+
+</head>
+<hr>
+<body>
+<header>
+    <h1 class="center" style="background-color: rgb(128,128,128); color: white"> Heading:H1</h1>
+    <div id="menubar" style="background: #00FF00">
+        <ul id="menulist">
+            <li class="menuitem" onclick="reStyle(0)">Stylsheet 1</li>
+            <li class="menuitem" onclick="reStyle(1)">Stylsheet 2</li>
+            <li class="menuitem" onclick="reStyle(2)">Stylsheet 3</li>
+             <li class="menuitem" onclick="noStyle()">No Stylesheet</li>
+        </ul>
+    </div>
+
+</header>
+<hr>
+<nav>
+    <h2 class="center">Navigation:H2</h2>
+    <ul>
+        <li><a href="#section1">section1</a></li>
+        <ul>
+            <li><a href="#article1">article1</a></li>
+            <ul>
+                <li><a href="#aside1">aside1</a></li>
+                <ul>
+                    <li><a href="#span1">span1</a></li>
+                    <li><a href="#span2">span2</a></li>
+                    <li><a href="#span2">span3</a></li>
+                </ul>
+                <li><a href="#aside2">aside2</a></li>
+            </ul>
+
+            <li><a href="#article2">article2</a></li>
+            <li><a href="#article3">article3</a></li>
+
+        </ul>
+        <li><a href="#section2">section2</a></li>
+            <ul>
+                <li><a href="#article4">article4</a> </li>
+
+            </ul>
+        <li><a href="#section3">section3</a></li>
+            <ul>
+                <li><a href="#article5">article5</a> </li>
+                <li><a href="#article6">article6</a> </li>
+                <li><a href="#article7">article7</a> </li>
+            </ul>
+        <li><a href="#footer">footer</a></li>
+    </ul>
+
+</nav>
+<hr>
+
+<h3>section1:H3</h3>
+<h4>&nbsp;&nbsp;article1: H4</h4>
+
+<article id="article1">
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum purus ex, non eleifend felis pretium eu. Curabitur rutrum ultricies convallis. Etiam sed felis ac nulla commodo vulputate. Nunc id tempus massa. Phasellus vitae tristique elit. In et ligula id dolor bibendum bibendum a vel justo. Proin ornare gravida massa a malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac odio nec risus pharetra facilisis vel et arcu. </p>
+    <hr>
+
+    <aside id="aside1">
+        <h4>&nbsp;&nbsp;&nbsp;aside1:H4</h4>
+        <ol>
+            <li><a href="#span1">span1</a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum purus ex, non eleifend felis pretium eu. Curabitur rutrum ultricies convallis. Etiam sed felis ac nulla commodo vulputate. Nunc id tempus massa.
+            </li>
+            <li><a href="#span2">span2</a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum purus ex, non eleifend felis pretium eu. Curabitur rutrum ultricies convallis. Etiam sed felis ac nulla commodo vulputate. Nunc id tempus massa.
+            </li>
+            <li><a href="#span3">span3</a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum purus ex, non eleifend felis pretium eu. Curabitur rutrum ultricies convallis. Etiam sed felis ac nulla commodo vulputate. Nunc id tempus massa.
+            </li>
+        </ol>
+
+    </aside>
+
+    <hr>
+
+
+    <p><span id="span1" class="title"><h5>&nbsp;&nbsp;span1: H5</h5> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum purus ex, non eleifend felis pretium eu. Curabitur rutrum ultricies convallis. Etiam sed felis ac nulla commodo vulputate. Nunc id tempus massa. Phasellus vitae tristique elit. In et ligula id dolor bibendum bibendum a vel justo. Proin ornare gravida massa a malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac odio nec risus pharetra facilisis vel et arcu.</span> </p>
+
+
+
+    <p><span id="span2" class="title"><h5>&nbsp;&nbsp;span2: H5</h5> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum purus ex, non eleifend felis pretium eu. Curabitur rutrum ultricies convallis. Etiam sed felis ac nulla commodo vulputate. Nunc id tempus massa. Phasellus vitae tristique elit. In et ligula id dolor bibendum bibendum a vel justo. Proin ornare gravida massa a malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac odio nec risus pharetra facilisis vel et arcu.</span> </p>
+
+
+
+    <p><span id="span3" class="title"><h5>&nbsp;&nbsp;span3: H5</h5> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum purus ex, non eleifend felis pretium eu. Curabitur rutrum ultricies convallis. Etiam sed felis ac nulla commodo vulputate. Nunc id tempus massa. Phasellus vitae tristique elit. In et ligula id dolor bibendum bibendum a vel justo. Proin ornare gravida massa a malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac odio nec risus pharetra facilisis vel et arcu.</span> </p>
+
+
+</article>
+<hr>
+
+<article id="article2">
+            <h4>article2: H4</h4>
+            <h5>Heading: H5</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum purus ex, non eleifend felis pretium eu. Curabitur rutrum ultricies convallis. Etiam sed felis ac nulla commodo vulputate. Nunc id tempus massa. Phasellus vitae tristique elit. In et ligula id dolor bibendum bibendum a vel justo. Proin ornare gravida massa a malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac odio nec risus pharetra facilisis vel et arcu. </p>
+            <hr>
+
+
+         <h5>Heading: H5</h5>
+            <details><p>Details: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum purus ex, non eleifend felis pretium eu. Curabitur rutrum ultricies convallis. Etiam sed felis ac nulla commodo vulputate. Nunc id tempus massa. Phasellus vitae tristique elit. In et ligula id dolor bibendum bibendum a vel justo. Proin ornare gravida massa a malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                <summary>Summary</summary>
+            </details>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum purus ex, non eleifend felis pretium eu. Curabitur rutrum ultricies convallis. Etiam sed felis ac nulla commodo vulputate. Nunc id tempus massa. Phasellus vitae tristique elit. In et ligula id dolor bibendum bibendum a vel justo. Proin ornare gravida massa a malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac odio nec risus pharetra facilisis vel et arcu. </p>
+            <hr>
+        </article>
+        <article id="article3">
+            <h4>article3: H4</h4>
+            <h5>Heading: H5</h5>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum purus ex, non eleifend felis pretium eu. Curabitur rutrum ultricies convallis. Etiam sed felis ac nulla commodo vulputate. Nunc id tempus massa. Phasellus vitae tristique elit. In et ligula id dolor bibendum bibendum a vel justo. Proin ornare gravida massa a malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac odio nec risus pharetra facilisis vel et arcu.
+                Nunc rutrum diam sed felis fermentum, et lobortis velit blandit. Sed pretium est sit amet magna laoreet mattis. Morbi placerat lectus lectus, eu viverra mauris convallis eget. Cras id leo nec justo tincidunt porttitor feugiat vitae velit. Praesent a urna ex. Etiam eu ultricies diam. Curabitur luctus nibh sed accumsan rhoncus. Ut quam lectus, ultricies et efficitur ut, pharetra id ex. Sed sed sapien eleifend, tincidunt turpis ac, eleifend elit. Cras velit dui, sollicitudin non nibh quis, blandit tempus quam. Etiam ut dui ut massa facilisis ultricies pretium in lorem. Sed malesuada elit id gravida posuere. Integer quis arcu at odio iaculis malesuada. Aliquam et est ex. Praesent ultrices posuere porta. </p>
+        </article>
+    </section>
+    <hr>
+
+    <section id="section2">
+        <h3>section2: H3</h3>
+
+        <article id="article4">
+            <h4>article4: H4</h4>
+            <h5>Heading: H5</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum purus ex, non eleifend felis pretium eu. Curabitur rutrum ultricies convallis. Etiam sed felis ac nulla commodo vulputate. Nunc id tempus massa. Phasellus vitae tristique elit. In et ligula id dolor bibendum bibendum a vel justo. Proin ornare gravida massa a malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac odio nec risus pharetra facilisis vel et arcu. Nunc rutrum diam sed felis fermentum, et lobortis velit blandit. Sed pretium est sit amet magna laoreet mattis.</p>
+
+        <h5>blockquote: H5</h5>
+        <p>Here is a quote from W3School website:</p>
+
+<blockquote cite="https://developer.mozilla.org/hu/docs/Web/HTML/Element/blockquote">
+
+cite
+    A URL that designates a source document or message for the information quoted. This attribute is intended to point to information explaining the context or the reference for the quote. 
+</blockquote>
+
+<hr>
+        <h5>pre: H5</h5>
+            <pre>
+                Text in a pre element
+                is displayed in a fixed-width
+                font, and it preserves
+                both      spaces and
+                line breaks
+            </pre>
+
+        <hr>
+        <h5>code: H5</h5>
+         <code>
+                var x = 5;<br>
+                var y = 6;<br>
+                document.getElementById("demo").innerHTML = x + y;
+        </code>
+
+        </article>
+    </section> 
+    <hr>
+
+    <section id="section3">
+        <h3>section3: H3</h3>
+
+        <article id="article5">
+            <h4>article5: H4</h4>
+            <h5>Description Lists: H5</h5>
+
+
+            <dl>
+              <dt>Lorem ipsum</dt>
+                  <dd>- dolor sit amet</dd>
+                  <dd>- dolor sit amet</dd>
+              <dt>Lorem ipsum</dt>
+                  <dd>- dolor sit amet</dd>
+                  <dd>- dolor sit amet</dd>
+            </dl>
+
+        <hr>
+
+            <h5>HTML Link: H5</h5>
+            <p>W3School <a href="http://www.w3schools.com/html/" target="_blank">Click here!</a></p>
+        <hr>
+
+
+        <strong>Strong text</strong>
+        <hr>
+            <h5>Image: H5</h5>
+
+            <img src="http://lorempixel.com/output/nature-q-c-200-100-1.jpg" alt="lorempixel.com" >
+        <hr>
+        </article>
+        <article id="article6">
+        <h4>article6: H4</h4>
+
+            <h5>Table: H5</h5>
+
+            <table align="center" border="1">
+                <caption>Restaurants</caption>
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Adress</th>
+                    <th>E-mail</th>
+                    <th>Favorite restaurant</th>
+                </tr>
+                </thead>
+                <tr>
+                    <td>Lorem Ipsum Dolor</td>
+                    <td>Sed Efficitur Blandit Aliquet</td>
+                    <td>lorem@ipsum.or</td>
+                    <td>Duis Dignissim eget</td>
+                </tr><tr>
+                <td> Pellentesque In Purus</td>
+                    <td>Aenean Urna</td>
+                    <td>etiamalesuada@ipsum.or</td>
+                    <td>Soales At Turpis</td>
+                </tr><tr>
+                    <td>Nunc Fringilla</td>
+                    <td>Lorem ipsum dolor</td>
+                    <td>fusce@ipsum.or</td>
+                    <td>Curabitur Eu Ultricie</td>
+                </tr>
+            </table>
+        </article>
+
+
+        <hr>
+        <article id="article7">
+        <h4>article7: H4</h4>
+        <h5>Form: H5</h5>
+
+        <form action="action_page.php" method="post">
+            <fieldset>
+                <legend>Personal information:</legend>
+
+                <p>First name:</p>
+                <input type="text" name="firstname" value="firstname">
+
+                <p>Last name:</p>
+                <input type="text" name="lastname" value="lastname">
+                <br>
+                <p>E-mail:</p>
+                <input type="email" name="email" value="email@lorem.lo">
+                <br><br>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+
+        </article>
+    </section>
+    <hr>
+    <footer id="footer">
+
+        <h6>Footer: H6</h6>
+
+
+    </footer>
+
+
+</body>
+
+
+</html>

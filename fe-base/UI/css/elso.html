@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS</title>
+    <style>
+        h1 {
+            display: inline-block;
+            background-color: #8F8;
+            color: red;
+            font-weight: bold;
+            margin: 20px;
+            padding: 25px;
+            border: 20px solid #FF8;
+            height: 500px;
+            width: 500px;
+            border-radius:250px; /*50%*/ /*250px 100px 50px 150px*/
+        }
+        #bb{
+            box-sizing: border-box;
+           /*visibility: hidden;*/
+            /*display: none; *//*kikerül a dobozmodel struktúrából*/
+        }
+
+
+        #cb{
+            box-sizing: content-box;
+        }
+        h1 > div{
+            background-color:#F88;
+           height: 100%;
+            width: 100%;
+          /*display: inline-block;*/
+        }
+        h1 > div:hover{
+            outline: 20px solid #88F;/* a contenthez számítodik */
+            outline-offset: -150px;/*milyen távol legyen a contentől*/
+
+        }
+        div{ /* a div block elem*/
+            height: 40px;
+            background-color: magenta;
+        }
+        #kacsa{
+            width: 200px;
+            display: inline-block;
+            padding-top: 100px;
+        }
+
+    </style>
+</head>
+<body>
+<div></div>
+<h1 id="bb"><div>
+    <span id="kacsa">sadfsdsagdsf fdshgs sdgh s dgh sgh sgdh </span>
+</div>border-box</h1><!-- a html tagnaek a tartalmának a magassága benne van a padding meg a margin is , a margin nincs benne-->
+<h1 id="cb"><div><div>alma</div></div>content-box</h1><!-- a html tagnaek a tartalmának a magassága   a margin nincs benne-->
+
+</body>
+</html>

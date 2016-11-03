@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="description" content="Free Web tutorials"/>
+    <meta name="keywords" content="HTML5,html"/>
+    <meta name="author" content="Kovacs Sandor"/>
+    <title>Video</title>
+</head>
+<hr/>
+<body>
+<header>
+    <h1> Videók</h1>
+    <!-- https://www.w3.org/2010/05/video/mediaevents.html-->
+</header>
+<hr/>
+<section role="main">
+    <div>
+        <label for="video_1">Video(mp4,ogg,webm):</label>
+
+        <div>
+            <button onclick="playPause()">Play/Pause</button>
+            <button onclick="makeBig()">Big</button>
+            <button onclick="makeSmall()">Small</button>
+            <button onclick="makeNormal()">Normal</button>
+        </div>
+        <video id="video_1" controls="controls" autoplay="autoplay" loop="loop" preload="auto" mediagroup="myVideoGroup"
+               poster="http://media.w3.org/2010/05/video/poster.png" width="200">
+            <source id="mp4_1" src="http://media.w3.org/2010/05/video/movie_300.mp4" type="video/mp4">
+            <source id="webm_1" src="http://media.w3.org/2010/05/video/movie_300.webm" type="video/webm">
+            <source id="ogv_1" src="https://media.w3.org/2010/05/sintel/trailer.ogv" type="video/ogg">
+            <p>Your user agent does not support the HTML5 Video element.</p><a href="http://www.webestools.com/">http://www.webestools.com/</a>
+        </video>
+    </div>
+    <hr/>
+    <div>
+        <div><label for="video_2">Video(mp4,ogg,webm):</label></div>
+        <div>
+            <video controls="" id="video_2" mediagroup="myVideoGroup" preload="metadata"
+                   poster="https://media.w3.org/2010/05/sintel/poster.png">
+                <source id="mp4_2" src="https://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4">
+                <source id="webm_2" src="https://media.w3.org/2010/05/sintel/trailer.webm" type="video/webm">
+                <source id="ogv_2" src="https://media.w3.org/2010/05/sintel/trailer.ogv" type="video/ogg">
+                <track kind="subtitles" label="English" srclang="en"
+                       src='http://durian.blender.org/wp-content/content/subtitles/sintel_en.srt'/>
+                <track src="sintelen.srt" label="English2" srclang="en" kind="subtitles">
+                <track src="https://download.blender.org/durian/subs/sintel_hu.srt" kind="subtitles" srclang="hu"
+                       label="Hungary">
+                <track src="sintel-en.vtt" kind="subtitles" srclang="en" label="English3">
+                <p>Your user agent does not support the HTML5 Video element. </p><a href="http://www.webestools.com/">http://www.webestools.com/</a>
+            </video>
+        </div>
+    </div>
+    <hr/>
+    <div>
+        <div><label for="video_4">Video(mp4,ogg,webm):</label></div>
+        <div>
+            <video id="video_4" controls="controls" width="320" height="176">
+                <source src="http://www.storiesinflight.com/js_videosub/jellies.mp4" type="video/mp4"/>
+                <!-- WebKit -->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+    </div>
+    <hr/>
+    <div>
+        <!-- https://www.sitepoint.com/html5-video-fragments-captions-dynamic-thumbnails/ -->
+        <div><label for="video_5">Video(mp4,webm) with subtitle:</label></div>
+        <div>
+            <video id="video_5" controls preload="metadata">
+                <source src="https://docs.google.com/uc?export=download&id=0B6wwyazyzml-a1ZtTHAteVhyd28"
+                        type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'/>
+                <source src="https://docs.google.com/uc?export=download&id=0B6wwyazyzml-a1ZtTHAteVhyd28"
+                        type='video/webm;codecs="vp8, vorbis"'/>
+                <track src="http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2014/12/1417495104102614-maui-es.vtt"
+                       label="Español Subtítulos" kind="subtitles" srclang="es" default/>
+            </video>
+        </div>
+    </div>
+    <hr/>
+    <div>
+        <div><label for="video_3">Video(mp4,ogg,webm):</label></div>
+        <div>
+            <video id="video_3" width="576" height="324" controls
+                   poster="http://www.webestools.com/page/media/videoTag/BigBuckBunny.png">
+                <source id="mp4_3" src="http://www.webestools.com/page/media/videoTag/BigBuckBunny.mp4"
+                        type="video/mp4">
+                <source id="ogg_3" src="http://www.webestools.com/page/media/videoTag/BigBuckBunny.ogg"
+                        type="video/ogg">
+                <source id="webm_3" src="http://www.webestools.com/page/media/videoTag/BigBuckBunny.webm"
+                        type="video/webm">
+                Your browser does not support the video tag or the file format of this video. <a
+                    href="http://www.webestools.com/">http://www.webestools.com/</a>
+            </video>
+        </div>
+    </div>
+    <hr/>
+    <div>
+        <div><label for="youtube_1">Youtube:</label></div>
+        <div>
+            <iframe id="youtube_1" width="560" height="315" src="https://www.youtube.com/embed/Ct8NmqfYGpA"
+                    frameborder="0" allowfullscreen ></iframe>
+        </div>
+    </div>
+</section>
+</body>
+</html>

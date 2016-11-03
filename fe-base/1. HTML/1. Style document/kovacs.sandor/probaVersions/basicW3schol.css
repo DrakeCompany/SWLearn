@@ -1,0 +1,159 @@
+p.center{
+    text-align: center;
+    color: red;
+    border-width: 10px;
+    border-top-style: ridge;
+}
+
+p.large{
+    font-size: 300%;
+    border-style: inset dotted solid double;
+}
+
+img {
+    max-width: 280px;
+    border-radius: 10px;
+    margin-left:40%;
+
+}
+
+h2{
+    width:20%;
+    margin:auto;
+    background-color: #84c754;
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 20px;
+    outline-style: solid;
+    outline-color: #00FF00;
+    outline-width: thick;
+    -moz-outline-radius:20px;
+    font-family: "Times New Roman", serif;
+    font-style: italic;
+    font-size: 200%;
+    font-weight:normal;
+    font-variant: small-caps;
+
+
+}
+
+p.uppercase{
+    margin: 50px 100px 50px;
+    color: #84c754;
+    text-align: justify;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: "Times New Roman", serif;
+}
+p.capitalize {
+    margin: 20px;
+    padding: 10px;
+    text-transform: capitalize; /* nagybetűssé alakítja */
+    text-indent: 50px;/* ennyivel kezdi beljebb*/
+    text-align: justify;
+    letter-spacing: -2px;/*betük közti távolság */
+    line-height: 1.8; /* sorok közti távolság */
+}
+p.dir{
+    direction: rtl;  /* írás irány right to left */
+    word-spacing: 30px;/* szavak közötti távolság */
+    font: italic bold 12px/30px Georgia, serif;
+}
+a:hover{
+    text-decoration: none; /* kiveszi az aláhúzás jelet*/
+    color: hotpink;
+    background-color: lightgreen;
+}
+a:link{
+    color:red;
+    background-color: cyan;
+}
+
+ol.d{
+   list-style-type: katakana; /*lista tipusa */
+
+}
+ol li{
+    background: #d4d4d4;
+    padding: 10px;
+    margin-left: 60px;
+    width: 100px;
+
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td{
+    padding: 8px;
+    border-bottom: 1px solid #84c754;
+
+}
+
+tr:nth-child(even){
+    background-color: #d4d4d4
+}
+tr:hover{
+    background-color: #4CAF50;
+}
+
+div.ex2{
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 30%;
+    padding: 10px;
+    max-width: 500px;
+    border: 3px solid #32a4e7;
+}
+div.absolute-blue{
+    margin-left: 50px;
+    background-color: blue;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    margin-top: 50px;
+}
+div.relativ-yellov{
+    background-color: yellow;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+div.fixed-green{
+   top: 10px;
+    right: 20px;
+    background-color: green;
+    position: relative;
+    width: 650px;
+    height:650px;
+}
+div.static-red{
+    background-color: red;
+    position: static;
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+    margin-right: 10px;
+}
+div#gradient{
+    color: green;
+    width: 200px;
+    height: 200px;
+    background-attachment: inherit;
+    background: radial-gradient(red,blue);
+
+
+
+}
+div#picture{
+    background-image: url("mozart.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat ;
+    height: 166px;
+
+}

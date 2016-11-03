@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="description" content="Free Web tutorials"/>
+    <meta name="keywords" content="HTML5,html"/>
+    <meta name="author" content="Kovacs Sandor"/>
+    <title>New_book</title>
+</head>
+<hr/>
+<body>
+<header>
+    <h1>Új könyv felvlitele</h1>
+</header>
+<hr/>
+<section role="main">
+    <div>
+        <form method="post" enctype="multipart/form-data">
+            <table>
+                <thead>
+                <th> Könyv ID</th>
+                <th> Könyv szerzője</th>
+                <th> Könyv címe</th>
+                <th> Ár</th>
+                <th> Törlés</th>
+                </thead>
+                <tfoot>
+                <td colspan="5">Összes Könyv: 2 db.</td>
+                </tfoot>
+                <tr>
+                    <td><input readonly="readonly" name="bid_1" id="bid_1" value="S412"/></td>
+                    <td><input required="readonly" name="bauthor_1" id="bauthor_1" value=" Robert Louis Stevenson"/>
+                    </td>
+                    <td><input required="readonly" name="bname_1" id="bname_1" value="Kincses sziget"/></td>
+                    <td><input required="readonly" type="number" min="0" step="5" name="bprice_1" id="bprice_1"
+                               value="1500"/>Ft
+                    </td>
+                    <td>
+                        <button formnovalidate="formnovalidate" name="actionDelete" value="delete:1" id="delete:1">
+                            Töröl
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input readonly="readonly" name="bid_2" id="bid_2" value="R128"/></td>
+                    <td><input required="readonly" name="bauthor_2" id="bauthor_2" value="Rejtő Jenő"/></td>
+                    <td><input required="readonly" name="bname_2" id="bname_2" value="Az előretolt helyőrség"/></td>
+                    <td><input required="readonly" type="number" min="0" step="5" name="bprice_2" value="1800"/>Ft</td>
+                    <td>
+                        <button formnovalidate="formnovalidate" name="actionDelete" value="delete:2" id="delete:2">
+                            Töröl
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input name="bid_3" value="" pattern="[A-Z0-9]+" placeholder="Könyv ID"/></td>
+                    <td><input name="bauthor_3" value="" placeholder="Könyv szerzője"/></td>
+                    <td><input name="bname_3" value="" placeholder="Könyv címe"/></td>
+                    <td><input type="number" min="0" step="5" name="bprice_3" value="" placeholder=" Ár"/>Ft</td>
+                    <td>
+                        <button formnovalidate="formnovalidate" name="actionAdd" value="add:3" id="add">Új felvitele
+                        </button>
+                    </td>
+                </tr>
+            </table>
+            <div>
+                <input type="submit" name="update" value="Mentés" id="update"/>
+            </div>
+        </form>
+    </div>
+</section>
+</body>
+</html>

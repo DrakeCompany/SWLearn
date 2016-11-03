@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="hu" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Forms</title>
+    <meta charset="utf-8"/>
+    <meta name="description" content="Free Web tutorials"/>
+    <meta name="keywords" content="HTML5,html"/>
+    <meta name="author" content="Kovacs Sandor"/>
+</head>
+<body>
+<header>
+    <h1>Űrlapok</h1>
+</header>
+<hr/>
+<h2>Tartalom</h2>
+<nav>
+    <ul>
+        <li><a href="login.html" target="iframe_main">Belépés</a></li>
+        <li><a href="registration.html" target="iframe_main">Regisztráció</a></li>
+        <li><a href="newbook.html" target="iframe_main">Könyv adatok rögzitése</a></li>
+        <li><a href="questionnaire.html" target="iframe_main">Könyvtári kérdőív</a></li>
+    </ul>
+</nav>
+<section>
+    <article>
+        <iframe src="welcome.html" height="500" width="90%" align="center" name="iframe_main"></iframe>
+    </article>
+    <article>
+        <form action="mailto:kovacs.sandor.gy@dolphio.hu;szirjak.csaba@dolphio.hu" method="post" name="kerdoiv"
+              enctype="text/plain">
+            <fieldset>
+                <div>
+                    <label for="opinion">Vélemény a honlapról:</label> <br/>
+
+                <textarea cols="50" rows="3" name="myOpinion" id="opinion" placeholder="A véleményem:" maxlength="300"
+                          required></textarea>
+                </div>
+
+                <p>
+                    <input type="submit" value="Elküld"/>
+                    <input type="reset" value="Alaphelyzetbe állít"/>
+                </p>
+            </fieldset>
+        </form>
+    </article>
+</section>
+</body>
+<footer>
+    <p>
+        <small>Copyright © 2016 Dolphio
+            <a href="term_of_service.html">Terms of Service</a></small>
+    </p>
+</footer>
+</html>
