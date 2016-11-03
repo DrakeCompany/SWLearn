@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Fórum</title>
-    <link href="style_1.css" type="text/css" rel="stylesheet">
+    <link href="style_1.css" id="styles"  type="text/css" rel="stylesheet">
+
 </head>
 <body>
 <nav role="navigation">
 
-    <a href="" id="main" role="menuitem">Main</a>
-    <a href="" id="registration" role="menuitem">Registration</a>
-    <a href="" id="administration" role="menuitem">Adminsistration</a>
+    <a href="#" id="main" role="menuitem">Main</a>
+    <a href="#" id="registration" role="menuitem">Registration</a>
+    <a href="#" id="administration" role="menuitem">Adminsistration</a>
 
     <div class="dropdown">
         <button class="dropbtn">Styles</button>
         <div class="dropdown-content">
-            <a href="#">Style1</a>
-            <a href="#">Style2</a>
+            <a href="#" onclick="document.getElementById('styles').href='style_1.css'">Style1</a>
+            <a href="#" onclick="document.getElementById('styles').href='style_2.css'">Style2</a>
             <a href="#">Bootstrap</a>
         </div>
     </div>

@@ -127,7 +127,12 @@ button#name_button{
 }
 
 .dropdown:hover .dropdown-content {
+/*[if IE]*/
     display: inline-flex;
     align-items: flex-start;
+/*[endif]*/
     background-color: #3332ff;
+   /* display: inline-block;
+    position: absolute;
+    bottom: 2px;*/
 }
