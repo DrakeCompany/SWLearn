@@ -65,9 +65,7 @@ button#name_button{
 }
 .topic_data{
     padding-right: 2px;
-    position: absolute;
-    right: 0;
-    top: 0;
+   float: right;
 
 }
 .coments_content{
