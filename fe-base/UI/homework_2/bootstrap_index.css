@@ -8,29 +8,48 @@ footer {
     min-height: 200px;
 }
 
-/* Hide the carousel text when the screen is less than 600 pixels wide */
-@media (max-width: 600px) {
-    .carousel-caption {
-        display: none;
-    }
+.bg-1 {
+    background-color: #1abc9c;
+    color: #ffffff;
+}
+.bg-2 {
+    background-color: #474e5d;
+    color: #ffffff;
+}
+.bg-3 {
+    background-color: #ffffff;
+    color: #1b2155;
+}
+.container-fluid {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .navbar {
-    background-color : #BBE;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
     font-size: 22px;
+}
+.navbar-default{
+    background-color : #BBE;
 
 }
-nav a{
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+    background-color: #88F;
+
+}
+.navbar-nav  li a:hover {
+  /*  background-color: #3332ff; !important;*/
+}
+
+.navbar-nav  li a{
     background-color:#88F ;
     border-radius: 7px;
-    color: white;   
+    color: white; !important;
+    padding: 3px;
     text-decoration: none;
-
-}
-.navbar-inverse .navbar-nav>li>a {
-    color: white;
-}
-.navbar-nav>li>a {
-     padding-top: 10px;
-     padding-bottom: 10px;
-     line-height: 15px;
 }

@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14bd093b-25f4-4a5f-a80d-cad2c4c3035b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UI/homework_2/bootstrap_index.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UI/homework_2/bootstrap_index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UI/homework_2/index.html" afterPath="$PROJECT_DIR$/UI/homework_2/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UI/homework_2/style_1.css" afterPath="$PROJECT_DIR$/UI/homework_2/style_1.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UI/homework_2/style_2.css" afterPath="$PROJECT_DIR$/UI/homework_2/style_2.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UI/homework_2/bootstrap_index.css" afterPath="$PROJECT_DIR$/UI/homework_2/bootstrap_index.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UI/homework_2/bootstrap_index.html" afterPath="$PROJECT_DIR$/UI/homework_2/bootstrap_index.html" />
     </list>
     <ignored path="fe-base.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,8 +37,8 @@
       <file leaf-file-name="style_1.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UI/homework_2/style_1.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="1" selection-start-line="18" selection-start-column="0" selection-end-line="24" selection-end-column="1" />
+            <state relative-caret-position="51">
+              <caret line="6" column="28" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -57,21 +54,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap_index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bootstrap_index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UI/homework_2/bootstrap_index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="76">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap_index.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="bootstrap_index.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/UI/homework_2/bootstrap_index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+            <state relative-caret-position="255">
+              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -445,7 +445,7 @@
       <workItem from="1477898399229" duration="4006000" />
       <workItem from="1477982828820" duration="15262000" />
       <workItem from="1478185864274" duration="378000" />
-      <workItem from="1478188643041" duration="16886000" />
+      <workItem from="1478188643041" duration="21671000" />
     </task>
     <task id="LOCAL-00001" summary="Style document kész.">
       <created>1475578022416</created>
@@ -678,11 +678,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478211808499</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="bootstrap elkezdve">
+      <created>1478246306220</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1478246306220</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86653000" />
+    <option name="totallyTimeSpent" value="91438000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1487" y="34" width="1310" height="698" extended-state="0" />
@@ -742,7 +749,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="A címekhez beszúrva a címsorok mérete" />
     <MESSAGE value="Document_Style index.html nap végi mentés" />
     <MESSAGE value="Document_Style index.html kész codereview-re" />
     <MESSAGE value="tables/index.html  és table2/index.html kész codereview-re" />
@@ -767,7 +773,8 @@
     <MESSAGE value="UI" />
     <MESSAGE value="UI-style-buttom-kész" />
     <MESSAGE value="UI-style-buttom-mükodik:1,2-es stílusra" />
-    <option name="LAST_COMMIT_MESSAGE" value="UI-style-buttom-mükodik:1,2-es stílusra" />
+    <MESSAGE value="bootstrap elkezdve" />
+    <option name="LAST_COMMIT_MESSAGE" value="bootstrap elkezdve" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1109,24 +1116,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/UI/homework_2/style_1.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="1" selection-start-line="18" selection-start-column="0" selection-end-line="24" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UI/homework_2/bootstrap_index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+        <state relative-caret-position="51">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UI/homework_2/bootstrap_index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="76">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UI/homework_2/bootstrap_index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
           <folding />
         </state>
       </provider>
