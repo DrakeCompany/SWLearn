@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function showName(name,callback2) {
+        callback2(name);
+    }
+       // showName("Kovacs",alert);
+      showName("Kovacs",console.log);
+</script>
+<script>
+    //JSON.parse('{"test":true}')
+    //eval('alert("xss")');
+
+                    function someJSFunction () {
+                        console.log("Clicked nav, yo!");
+                    }
+                    function someJSFunction2(thiz) {
+                       // console.log(thiz.getAttribute('id'));
+
+                    }
+
+</script>
+<nav onclick="someJSFunction();">valami</nav>
+<nav id="nav-id" >valami más2</nav>
+<script>
+    document.getElementById('nav-id').addEventListener('click',function () {//így használjuk, ha fel akarunk íratkozni egy eventre
+        console.log('Clicked nav, yo2!')
+    })
+</script>
+</body>
+</html>

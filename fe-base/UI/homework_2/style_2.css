@@ -119,7 +119,7 @@ button#name_button{
 }
 
 .dropdown-content a:hover {
-    background-color: #02ff53;
+    background-color: #216d42;
     overflow: auto;
     transition: all 2s;
 }
@@ -127,5 +127,5 @@ button#name_button{
 .dropdown:hover .dropdown-content {
     display: inline-flex;
     align-items: flex-start;
-    background-color: #02ff53;
+    background-color: #216d42;
 }
