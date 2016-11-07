@@ -21,18 +21,35 @@ class Duck {
         this.interval=setInterval( ()=> {
             let x = this.x + "px";
             this.element.style.left = x;
-            this.x++;
-        },1)
+
+
+
+            this.x+=5;
+         if(this.x>=window.innerWidth){
+
+             window.clearInterval(this.interval);
+             console.log("Vége")
+         }
+
+        },10)
+
 
     }
 
 }
 
-for(var i=0; i<6; i++){
-    ((y) =>{
-    setTimeout(function(){
-        new Duck(y*100)
-        }, 1000);
-    }) (i);
-}
+// for(var i=0; i<6; i++){
+//     ((y) =>{
+//     setTimeout(function(){
+//         new Duck(y*100)
+//         }, 1000);
+//     }) (i);
+// }
 
+for(let i=0; i<26; i++){
+    setTimeout(function () {
+
+         new Duck(Math.random()*(window.innerHeight-50));
+    },i*500)
+
+}
