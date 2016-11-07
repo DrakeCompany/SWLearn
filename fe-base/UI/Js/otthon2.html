@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js2</title>
+<script language="JavaScript" type="text/javascript">
+    msg="This is a an example of a scrolling message. Isn't it exciting?"
+    msg="...         ..."+msg;
+    pos = 0;
+    function scrollMessage() {
+        window.status=msg.substring(pos,msg.length)+msg.substring(0,pos);
+        pos++;
+        document.getElementById("msgScroll").innerHTML=msg.lastModifiedDate;
+        if(pos>msg.length) pos=0;
+        window.setTimeout("scrollMessage()",200);
+
+    }
+    scrollMessage();
+</script>
+</head>
+<body>
+    <h1>Scrolling Message Example</h1>
+<div id="msgScroll" onclick="scrollMessage()">Msg:</div>
+
+Look at the status line at the bottom of this page. (Dont
+    watch it too long, as it may be hyonotic. )
+</body>
+</html>

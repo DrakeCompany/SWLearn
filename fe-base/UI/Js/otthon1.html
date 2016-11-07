@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Js</title>
+    <script>
+        var string1="string1";
+        var string2="string2";
+        var alert2 = function (who) {
+            alert(who);
+        };
+        function greet (who,alert) {
+            alert2(who);
+
+        }
+
+    </script>
+</head>
+<body>
+<div id="katt" onclick="kiir()">Katt ide</div>
+<div id="mas" >mas</div>
+<script>
+   // string1="valami";
+    greet(string1,alert2(string2));
+   function kiir() {
+        document.getElementById("mas").innerHTML=string1.charAt(0);
+   }
+    document.getElementById("mas").addEventListener('click',function () {
+        document.getElementById("mas").innerHTML=string1.substring(2,4);
+
+    })
+</script>
+
+
+</body>
+</html>
