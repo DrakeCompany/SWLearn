@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14bd093b-25f4-4a5f-a80d-cad2c4c3035b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UI/Js/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UI/Js/hackerrrank/app_js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UI/Js/hello.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UI/Js/app2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UI/Js/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UI/Js/testNodeServer/test/express.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UI/Js/testNodeServer/test/public/index.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UI/Js/testNodeServer/test/public/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UI/Js/testNodeServer/test/public/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UI/Js/hackerrrank/two_character.html" afterPath="$PROJECT_DIR$/UI/Js/hackerrrank/two_character.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UI/Js/app.js" afterPath="$PROJECT_DIR$/UI/Js/app.js" />
     </list>
     <ignored path="fe-base.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,36 +29,90 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UI/kacsa/index.html">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UI/Js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="44" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="44" />
+            <state relative-caret-position="380">
+              <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
+              <folding>
+                <element signature="e#0#40#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UI/Js/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="duck.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UI/kacsa/duck.js">
+      <file leaf-file-name="app2.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UI/Js/app2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+            <state relative-caret-position="272">
+              <caret line="18" column="76" selection-start-line="18" selection-start-column="76" selection-end-line="18" selection-end-column="76" />
               <folding>
-                <element signature="n#!!doc;n#Duck#0" expanded="false" />
+                <element signature="e#0#40#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/UI/Js/app.js">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/UI/Js/testNodeServer/test/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+            <state relative-caret-position="219">
+              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="15" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UI/Js/testNodeServer/test/public/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
               <folding>
                 <element signature="e#0#40#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UI/Js/testNodeServer/test/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="express.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UI/Js/testNodeServer/test/express.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#40#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UI/Js/testNodeServer/test/public/index.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -82,33 +139,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="negyedik.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UI/Js/negyedik.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="masodik.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UI/Js/masodik.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -127,17 +164,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/1. HTML/4. Iframes/kovacs.sandor/new_3.html" />
-        <option value="$PROJECT_DIR$/1. HTML/4. Iframes/kovacs.sandor/new_2.html" />
-        <option value="$PROJECT_DIR$/1. HTML/4. Iframes/kovacs.sandor/main.html" />
-        <option value="$PROJECT_DIR$/1. HTML/7. Graphics/kovacs.sandor/index.html" />
-        <option value="$PROJECT_DIR$/1. HTML/3. Forms/kovacs.sandor/registration.html" />
-        <option value="$PROJECT_DIR$/1. HTML/7. Graphics/kovacs.sandor/my-draw.html" />
-        <option value="$PROJECT_DIR$/1. HTML/1. Style document/kovacs.sandor/index.css" />
-        <option value="$PROJECT_DIR$/2. CSS/1. Style document/index.css" />
-        <option value="$PROJECT_DIR$/1. HTML/1. Style document/kovacs.sandor/index.html" />
-        <option value="$PROJECT_DIR$/1. HTML/2. Tables/kovacs.sandor/table2/index.html" />
-        <option value="$PROJECT_DIR$/2. CSS/1. Style document/kovacs.sandor/index.css" />
         <option value="$PROJECT_DIR$/1. HTML/1. Style document/kovacs.sandor/probaVersions/indexW3School.html" />
         <option value="$USER_HOME$/UI/html/homework/kovacs_sandor/index1_1.html" />
         <option value="$PROJECT_DIR$/1. HTML/1. Style document/kovacs.sandor/probaVersions/selector.html" />
@@ -178,6 +204,17 @@
         <option value="$PROJECT_DIR$/UI/Js/hackerrrank/app_js.html" />
         <option value="$PROJECT_DIR$/UI/Js/hello.js" />
         <option value="$PROJECT_DIR$/UI/Js/app.js" />
+        <option value="$PROJECT_DIR$/UI/Js/index.html" />
+        <option value="$PROJECT_DIR$/UI/Js/app2.js" />
+        <option value="$PROJECT_DIR$/UI/Js/testNodeServer/test/index.js" />
+        <option value="$PROJECT_DIR$/UI/Js/testNodeServer/test/package.json" />
+        <option value="$PROJECT_DIR$/UI/Js/testNodeServer/index.html" />
+        <option value="$PROJECT_DIR$/UI/Js/testNodeServer/test/index.css" />
+        <option value="$PROJECT_DIR$/UI/Js/testNodeServer/test/index.html" />
+        <option value="$PROJECT_DIR$/UI/Js/testNodeServer/test/public/index.css" />
+        <option value="$PROJECT_DIR$/UI/Js/testNodeServer/test/public/index.js" />
+        <option value="$PROJECT_DIR$/UI/Js/testNodeServer/test/express.js" />
+        <option value="$PROJECT_DIR$/UI/Js/testNodeServer/test/public/index.html" />
       </list>
     </option>
   </component>
@@ -187,11 +224,14 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/UI/Js/testNodeServer/test/node_modules" />
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="114" />
+    <option name="y" value="52" />
+    <option name="width" value="1140" />
+    <option name="height" value="706" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -289,6 +329,62 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fe-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fe-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testNodeServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fe-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fe-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testNodeServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -441,16 +537,16 @@
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Sa\Documents\Dolphio\swlearn\fe-base\UI" />
-      <recent name="C:\Users\kovacs.sandor\Documents\swlearn\fe-base\1. HTML\4. Iframes\kovacs.sandor" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Sa\Documents\UI_hazik\fe-base\fe-base\UI\Js\testNodeServer\test\public" />
+      <recent name="C:\Users\Sa\Documents\UI_hazik\fe-base\fe-base\UI\Js\testNodeServer\test" />
       <recent name="C:\Users\Sa\Documents\UI_hazik\fe-base\fe-base\UI\top\dl.dropboxusercontent.com\u\62196372\Solyom\images" />
       <recent name="C:\Users\Sa\Documents\UI_hazik\fe-base\fe-base\UI\kacsa" />
       <recent name="C:\Users\kovacs.sandor\Documents\swlearn\fe-base\2. CSS\1. Style document\kovacs.sandor" />
-      <recent name="C:\Users\kovacs.sandor\Documents\swlearn\fe-base\1. HTML\5. Page templates\kovacs.sandor" />
-      <recent name="C:\Users\kovacs.sandor\Documents\swlearn\fe-base\1. HTML\3. Forms" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Sa\Documents\Dolphio\swlearn\fe-base\UI" />
+      <recent name="C:\Users\kovacs.sandor\Documents\swlearn\fe-base\1. HTML\4. Iframes\kovacs.sandor" />
     </key>
   </component>
   <component name="RunManager">
@@ -535,7 +631,7 @@
       <workItem from="1478522027147" duration="22634000" />
       <workItem from="1478633913630" duration="806000" />
       <workItem from="1478721961405" duration="7776000" />
-      <workItem from="1478797826152" duration="13052000" />
+      <workItem from="1478797826152" duration="22983000" />
     </task>
     <task id="LOCAL-00001" summary="Style document kész.">
       <created>1475578022416</created>
@@ -824,24 +920,31 @@
       <option name="project" value="LOCAL" />
       <updated>1478859171737</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="appjs1">
+      <created>1478878516548</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1478878516548</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="168618000" />
+    <option name="totallyTimeSpent" value="178549000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="114" y="52" width="1140" height="706" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21130952" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18511796" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19243243" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19481865" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32953367" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3437838" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2578397" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.09222798" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -888,7 +991,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Form folytatva" />
     <MESSAGE value="Form javítás előtt" />
     <MESSAGE value="Form javítás után" />
     <MESSAGE value="Form javítás után2" />
@@ -913,7 +1015,8 @@
     <MESSAGE value="duck" />
     <MESSAGE value="duck2" />
     <MESSAGE value="two_character-version1" />
-    <option name="LAST_COMMIT_MESSAGE" value="two_character-version1" />
+    <MESSAGE value="appjs1" />
+    <option name="LAST_COMMIT_MESSAGE" value="appjs1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -922,56 +1025,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/2. CSS/1. Style document/kovacs.sandor/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2. CSS/1. Style document/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/UI/html/homework/Marton_Krisztian_Zsolt/calendar.html" />
-    <entry file="file://$USER_HOME$/UI/html/homework/kovacs_sandor/homework_1/index1_2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2006">
-          <caret line="118" column="8" selection-start-line="0" selection-start-column="0" selection-end-line="132" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/UI/html/homework/kovacs_sandor/homework_1/index1_1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1. HTML/5. Page templates/kovacs.sandor/index_fejlec_lablec_2hasabos_right.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-136">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1. HTML/5. Page templates/kovacs.sandor/index_parallax.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85">
-          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1. HTML/5. Page templates/kovacs.sandor/news_template_main_example.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="29" column="65" selection-start-line="29" selection-start-column="65" selection-end-line="29" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/1. HTML/5. Page templates/kovacs.sandor/news_template2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1293,11 +1346,81 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/UI/Js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+        <state relative-caret-position="380">
+          <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
           <folding>
             <element signature="e#0#40#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UI/Js/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UI/Js/app2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="18" column="76" selection-start-line="18" selection-start-column="76" selection-end-line="18" selection-end-column="76" />
+          <folding>
+            <element signature="e#0#40#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UI/Js/testNodeServer/test/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UI/Js/testNodeServer/test/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UI/Js/testNodeServer/test/public/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UI/Js/testNodeServer/test/public/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#40#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UI/Js/testNodeServer/test/express.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#40#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UI/Js/testNodeServer/test/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="15" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
