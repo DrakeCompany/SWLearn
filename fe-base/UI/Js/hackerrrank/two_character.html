@@ -45,17 +45,31 @@
         var newStringToObjects=[];
         for(var z=0; z<newStringToArray.length; z++){
             newStringToObjects[newStringToArray[z]]=0;
+           // newStringToObjects.push({character:newStringToArray[z],count:0});
         }
         for(var z=0; z<newStringToArray.length; z++){
             newStringToObjects[newStringToArray[z]]++;
         }
 
+        if (!Object.keys) {
+            Object.keys = function (newStringToObjects) {
+                var arr = [],
+                        key;
+                for (key in newStringToObjects) {
+                    if (newStringToObjects.hasOwnProperty(key)) {
+                        arr.push(key);
+                    }
+                }
+                return arr;
+            };
+        }
+
+        Object.keys(newStringToObjects).length;
+
     console.log(newstring.length);
         console.log(newStringToArray);
         console.log(newStringToObjects);
-        console.log(newStringToObjects.sort(function (a,b) {
-            return a-b;
-        }));
+        console.log( Object.keys(newStringToObjects).length);
 
     }
 
