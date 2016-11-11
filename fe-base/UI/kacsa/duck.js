@@ -7,6 +7,7 @@ class Duck {
        this.element.classList.add('duck');
         this.element.style.top=y+"px";
            document.getElementById('container').appendChild(this.element);//gyermekeként hozzáadja a kacsát
+
         this.move();
         this.element.addEventListener('mouseover', ()=>{
             window.clearInterval(this.interval);
@@ -18,21 +19,21 @@ class Duck {
     }
     move(){
         this.x =0;
+        let slow = 10;
+
         this.interval=setInterval( ()=> {
             let x = this.x + "px";
             this.element.style.left = x;
-
-
-
             this.x+=5;
+
          if(this.x>=window.innerWidth){
 
              window.clearInterval(this.interval);
-             console.log("Vége")
+             console.log("Vége");
+
          }
 
-        },10)
-
+        },slow )
 
     }
 
@@ -46,10 +47,12 @@ class Duck {
 //     }) (i);
 // }
 
-for(let i=0; i<26; i++){
+for(let countDuck=0; countDuck<26; countDuck++){
+    var frequency=1000;
     setTimeout(function () {
 
          new Duck(Math.random()*(window.innerHeight-50));
-    },i*500)
+    },countDuck*frequency);
+    console.log(countDuck);
 
 }
