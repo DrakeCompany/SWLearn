@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14bd093b-25f4-4a5f-a80d-cad2c4c3035b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UI/Js/hackerrrank/two_character.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UI/kacsa/duck.js" afterPath="$PROJECT_DIR$/UI/kacsa/duck.js" />
     </list>
     <ignored path="fe-base.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -587,7 +585,7 @@
       <workItem from="1478522027147" duration="22634000" />
       <workItem from="1478633913630" duration="806000" />
       <workItem from="1478721961405" duration="7776000" />
-      <workItem from="1478797826152" duration="6826000" />
+      <workItem from="1478797826152" duration="6897000" />
     </task>
     <task id="LOCAL-00001" summary="Style document kész.">
       <created>1475578022416</created>
@@ -855,11 +853,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478552663140</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="two_character-version1">
+      <created>1478859131855</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1478859131855</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="162392000" />
+    <option name="totallyTimeSpent" value="162463000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -919,7 +924,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Form elkezdve" />
     <MESSAGE value="Form folytatva" />
     <MESSAGE value="Form javítás előtt" />
     <MESSAGE value="Form javítás után" />
@@ -944,7 +948,8 @@
     <MESSAGE value="JS_elso_ora" />
     <MESSAGE value="duck" />
     <MESSAGE value="duck2" />
-    <option name="LAST_COMMIT_MESSAGE" value="duck2" />
+    <MESSAGE value="two_character-version1" />
+    <option name="LAST_COMMIT_MESSAGE" value="two_character-version1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
