@@ -1,0 +1,12 @@
+body{
+  //
+  //background-color: rgba(252,236,252,1);
+  //background:(1px, bold)(#fcecfc, #ff7cd8, vertical);
+  //background: @include background-image(linear-gradient(top, rgba(252,236,252,1) 0%, rgba(251,166,225,1) 38%, rgba(253,137,215,1) 82%, rgba(255,124,216,1) 100%));
+  background: linear-gradient(to right, rgba(252,236,252,1) 0%, rgba(163,79,0,0.9) 28%, rgba(251,166,225,0.9) 38%, rgba(253,137,215,0.9) 82%, rgba(255,124,216,0.9) 100%);
+}
+
+div{
+  background: linear-gradient(to top, black, white);
+
+}

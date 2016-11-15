@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+<script>
+    function funcAsVariable() {
+        // JavaScriptben egy valtozo erteke lehet egy function.
+        var a = function () {
+            // Ezert visszateresi ertek is lehet function.
+            console.log('en voltam az elso');
+            return function () {
+                // Igy meg lehet hivni a meghivott function visszateresi erteket.
+                console.log('en voltam a masodik');
+                return function () {
+                    console.log('en meg mar elvesztem');
+                    return function () {
+                        console.log('functioninception');
+                    }
+                }
+            }
+        }
+        // Itt meghivja az a function, mely visszater egy functionnel, amit meghivunk, ami visszater egy functionnel,
+        // amit meghivunk.
+        // A functioninception azert nem irodik ki, mert az utolso function-t nem hivtuk meg.
+        // De ha a()()()(); lenne, akkor mar az is kiirodna.
+        a()()()(a()());
+        playWithMaps();
+
+        function playWithMaps() {
+            var map = {
+                a: 10,
+                b: 20,
+                c: 'b',
+                30: 'duck'
+            };
+
+            console.log('map.a: ', map.a);
+            console.log('map.b: ', map.b);
+            console.log('map.c: ', map.c);
+            console.log('map[\'a\']: ', map['a']);
+            console.log('map[map[\'c\']]: ', map[map['c']]);
+            // map[ map.a (10) + map.b (20) = 30 ]
+            console.log('map[map[\'a\'] + map.b]: ', map[map['a'] + map.b]);
+        }
+
+
+    };
+
+
+
+</script>
+<div onclick="funcAsVariable()">Valami</div>
+
+</body>
+</html>

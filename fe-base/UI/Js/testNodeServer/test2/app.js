@@ -1,8 +1,7 @@
 /**
- * Created by Sa on 2016.11.11..
+ * Created by Sa on 2016.11.12..
  */
-console.log("vagyok");
-
+//console.log('Hello world!');
 var hello = require('./hello');
 hello.hello();
 
