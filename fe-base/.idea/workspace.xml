@@ -2,32 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14bd093b-25f4-4a5f-a80d-cad2c4c3035b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UI/.idea/UI.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UI/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UI/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UI/Js/gulp1/gulpfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UI/Js/gulp1/src/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UI/Js/gulp1/src/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UI/Js/gulp1/src/index.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UI/Js/gulp1/src/index2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UI/Js/hadas/gyak1/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UI/Js/hadas/gyak1/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UI/Js/testNodeServer/gyak2/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UI/Js/testNodeServer/gyak2/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UI/Js/testNodeServer/gyakorlas1/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UI/Js/testNodeServer/gyakorlas1/hello.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UI/Js/testNodeServer/gyakorlas1/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UI/Js/testNodeServer/gyakorlas1/index2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UI/Js/testNodeServer/test2/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UI/Js/testNodeServer/test2/hello.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UI/Js/testNodeServer/test2/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UI/Js/testNodeServer/test3_bower/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UI/Js/testNodeServer/test3_bower/src/hello.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UI/Js/testNodeServer/test3_bower/src/hello2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UI/Js/testNodeServer/test3_bower/src/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UI/Js/testNodeServer/test3_bower/src/test.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UI/Js/testNodeServer/test/public/index.js" afterPath="$PROJECT_DIR$/UI/Js/testNodeServer/test/public/index.js" />
     </list>
     <ignored path="fe-base.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UI/Js/forum/app/style/index.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+            <state relative-caret-position="332">
+              <caret line="74" column="14" selection-start-line="74" selection-start-column="14" selection-end-line="74" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -61,17 +36,17 @@
         <entry file="file://$PROJECT_DIR$/UI/Js/forum/app/style/index.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/UI/Js/forum/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="55" column="80" selection-start-line="55" selection-start-column="80" selection-end-line="55" selection-end-column="80" />
+            <state relative-caret-position="323">
+              <caret line="55" column="64" selection-start-line="55" selection-start-column="64" selection-end-line="55" selection-end-column="64" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -173,10 +148,10 @@
     <handled-path value="$PROJECT_DIR$/UI/Js/testNodeServer/test3_bower/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1432" />
+    <option name="x" value="1358" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="784" />
+    <option name="width" value="1456" />
+    <option name="height" value="916" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -530,7 +505,7 @@
       <workItem from="1478633913630" duration="806000" />
       <workItem from="1478721961405" duration="7776000" />
       <workItem from="1478797826152" duration="47997000" />
-      <workItem from="1479117163095" duration="45118000" />
+      <workItem from="1479117163095" duration="47227000" />
     </task>
     <task id="LOCAL-00001" summary="Style document kész.">
       <created>1475578022416</created>
@@ -833,23 +808,30 @@
       <option name="project" value="LOCAL" />
       <updated>1478888879674</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="forum fejléc kész&#10;">
+      <created>1479250286813</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1479250286813</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="248681000" />
+    <option name="totallyTimeSpent" value="250790000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1432" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="1358" y="-8" width="1456" height="916" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18229167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17277856" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19481865" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32953367" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25153375" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20918368" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.09222798" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -897,7 +879,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Form javítás után" />
     <MESSAGE value="Form javítás után2" />
     <MESSAGE value="Form javítás után2+get-el" />
     <MESSAGE value="Form javítás után2+get-el a questionnaire.html" />
@@ -922,7 +903,8 @@
     <MESSAGE value="two_character-version1" />
     <MESSAGE value="appjs1" />
     <MESSAGE value="appjs2&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="appjs2&#10;" />
+    <MESSAGE value="forum fejléc kész&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="forum fejléc kész&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1356,29 +1338,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/UI/Js/forum/app/style/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="74" column="14" selection-start-line="74" selection-start-column="14" selection-end-line="74" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/UI/Js/forum/app/style/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UI/Js/forum/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="55" column="80" selection-start-line="55" selection-start-column="80" selection-end-line="55" selection-end-column="80" />
+        <state relative-caret-position="323">
+          <caret line="55" column="64" selection-start-line="55" selection-start-column="64" selection-end-line="55" selection-end-column="64" />
           <folding>
             <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UI/Js/forum/app/style/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
