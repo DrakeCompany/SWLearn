@@ -1,0 +1,131 @@
+$headerBasic-color: #00a3d9;
+$headerDarkerBasic-color: #29abd7;
+$bodyBackground-color: #ecf0f1;
+body{
+  background-color: $bodyBackground-color;
+}
+
+header{
+  background-color:$headerBasic-color;
+  height: 80px;
+}
+//.toppMiddle {
+//  padding-top: 25px;
+//}
+//.header-rigth{
+//  float: right;
+//  padding-right: 30px;
+//}
+//
+.title{
+  font-size: x-large;
+  float: left;
+  padding-left: 220px;
+  font-style: italic;
+  color: white;
+}
+//#searchButton {
+//  float: left;
+//  margin-left: -1.5em !important;
+//  background-color: #337ab7;
+//  border: none;
+//}
+//#search2{
+//  background-color: #337ab7;
+//  border: none;
+//}
+.login{
+  padding-left: 20px;
+  background-color:$headerBasic-color;
+  margin: 10px;
+  border: none;
+  color: white;
+  font-style: normal;
+  &:hover{
+    color: black;
+  }
+}
+
+.pull-left{
+  padding-top: 20px;
+  padding-left: 120px;
+
+}
+.pull-right{
+  padding-top: 20px;
+  padding-left: 80px;
+
+
+}
+
+#srch-term{
+  background-color: $headerDarkerBasic-color;
+  border: none;
+  color: white;
+}
+.btn-default{
+  background-color: $headerDarkerBasic-color;
+  border: none;
+  color: white;
+  &:hover{
+    color: black;
+    background-color: $headerDarkerBasic-color;
+  }
+}
+//.input-group-btn:hover{
+//  color: black;
+//}
+#loginClass{
+  background-color: $headerBasic-color;
+  border:none;
+}
+#leftSpace{
+  background-color: $bodyBackground-color;
+}
+#rightSpace{
+  background-color: $bodyBackground-color;
+}
+.container{
+  position: absolute;
+}
+.article{
+
+  display: block;
+  box-sizing: border-box;
+  height: 120px;
+}
+.imageUser{
+  width: 43px;
+  height: 48px;
+}
+#leftMain{
+  background-color: #ffffff;
+}
+.leftAuthor{
+  width: 30px;
+  position: fixed;
+  float: left;
+}
+.rightInfo{
+  position: absolute;
+  right:0;
+  top: 0;
+}
+.contentArticle{
+  width: 300px;
+  position: relative;
+  display: flex;
+}
+.clearfix{
+  clear: both;
+  zoom: 1;
+}
+.titleArticle{
+  background-color: #00FF00;
+  display: block;
+  position: relative;
+  top: 0;
+  width: 300px;
+  left: 320px;
+  text-transform: uppercase;
+}
