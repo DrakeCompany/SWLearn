@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login test</title>
+</head>
+<body>
+
+    <h1>Index</h1>
+    Hi <span id="username"></span>!
+
+    <script>
+        // fetch the username by AJAX
+        fetch('/user', {credentials: "same-origin"}).then( function( response ) {
+            return response.text();
+        } ).then( function( username ) {
+            document.getElementById('username').innerText = username;
+        } );
+    </script>
+</body>
+</html>
