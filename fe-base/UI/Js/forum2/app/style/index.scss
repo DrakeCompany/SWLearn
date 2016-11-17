@@ -89,7 +89,6 @@ header{
   position: absolute;
 }
 .article{
-
   display: block;
   box-sizing: border-box;
   height: 120px;
@@ -113,23 +112,36 @@ header{
   right:0;
   top: 0;
   height: inherit;
+  width: 60px;
 }
 .contentArticle{
   //width: 300px;
   position:absolute;
   left: 43px;;
+  padding-right: 60px;
   //display: flex;
 }
-.clearfix{
-  clear: both;
-  zoom: 1;
-}
+//.clearfix{
+//  clear: both;
+//  zoom: 1;
+//}
 .titleArticle{
-  background-color: #00FF00;
+  //background-color: #00FF00;
   display: block;
 
   //top: 0;
   //width: 300px;
   //left: 320px;
   text-transform: uppercase;
+}
+
+#leftContent{
+  padding: 1em;
+}
+#rightContent{
+  padding-top: 1em;
+}
+#footer{
+  position: fixed;
+  bottom: 0;
 }
