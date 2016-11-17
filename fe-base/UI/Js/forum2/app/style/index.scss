@@ -93,6 +93,7 @@ header{
   display: block;
   box-sizing: border-box;
   height: 120px;
+  position: relative;
 }
 .imageUser{
   width: 43px;
@@ -103,18 +104,21 @@ header{
 }
 .leftAuthor{
   width: 30px;
-  position: fixed;
+  //position: fixed;
   float: left;
+  height: inherit;
 }
 .rightInfo{
   position: absolute;
   right:0;
   top: 0;
+  height: inherit;
 }
 .contentArticle{
-  width: 300px;
-  position: relative;
-  display: flex;
+  //width: 300px;
+  position:absolute;
+  left: 43px;;
+  //display: flex;
 }
 .clearfix{
   clear: both;
@@ -123,9 +127,9 @@ header{
 .titleArticle{
   background-color: #00FF00;
   display: block;
-  position: relative;
-  top: 0;
-  width: 300px;
-  left: 320px;
+
+  //top: 0;
+  //width: 300px;
+  //left: 320px;
   text-transform: uppercase;
 }
