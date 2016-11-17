@@ -10,6 +10,11 @@ $leftWordColor: #9ea6ab;
   position: relative;
   padding: 10px 5px 10px 10px;
   overflow: hidden;
+  outline-style: solid;
+  outline-width: 4px;
+  outline-color: $bodyBackground-color;
+  border-bottom: solid 5px #ECF0FF;
+
 }
 body{
   background-color: $bodyBackground-color;
@@ -57,7 +62,7 @@ header{
 div.infoArticle{
   padding-top: 5px;
       &:first-child{
-        padding-top:15px;
+        padding-top:9px;
       }
 }
 .imageUser{
@@ -117,14 +122,14 @@ div.infoArticle{
 .rightInfo{
   position: absolute;
   right:0;
-  top: 0px;
+  top: 4px;
   height: inherit;
   width: 90px;
   padding-left: 10px;
-
   font-size: smaller;
   color: $leftWordColor;
-  border-left:solid 1px $leftWordColor;
+  border-left:solid 1px #ECF0FF;
+
 }
 #rightSpace{
   background-color: $bodyBackground-color;
