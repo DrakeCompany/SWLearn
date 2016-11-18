@@ -2,6 +2,7 @@ $headerBasic-color: #00a3d9;
 $headerDarkerBasic-color: #29abd7;
 $bodyBackground-color: #ecf0f1;
 $leftWordColor: #9ea6ab;
+$thinLineColor: #ECF0FF;
 
 .article{
   display: block;
@@ -46,6 +47,13 @@ body{
   height: 190px;
   background-color: $headerBasic-color;
   //padding: 20px 20px;
+      div:first-child{
+          span{
+            background-color: $headerDarkerBasic-color;
+            //color: $headerDarkerBasic-color;
+            font-size:large;
+          }
+      }
 
 }
 #footer{
@@ -137,12 +145,25 @@ div.infoArticle{
   padding-left: 8px;
   font-size: smaller;
   color: $leftWordColor;
-  border-left:solid 1px #ECF0FF;
+  border-left:solid 1px $thinLineColor;
 
+}
+hr{
+  color: $headerDarkerBasic-color;
 }
 #rightMain{
   color: white;
+  div{
+    hr{
+      margin-top: 0px;
+      margin-bottom: 0px;
+      color: $headerDarkerBasic-color;
+    }
+  }
 }
+//#rightMain{
+//  color: white;
+//}
 #rightSpace{
   background-color: $bodyBackground-color;
 }
@@ -182,17 +203,60 @@ div.infoArticle{
   padding-bottom: 6px;
 
 }
+.titleRightSide{
+  padding: 20px;
+  font-weight:bolder ;
+}
 .titleRightSide span{
   float: right;
+
 }
-.titleRightSide hr{
-  margin-top: 0px;
-  margin-bottom: 0px;
+
+.themeFirstRightMain{
+  padding: 10px 20px;
 }
 .themeFirstRightMain span{
   float: right;
 }
-.themeFirstRightMain hr{
-  margin-top: 0px;
-  margin-bottom: 0px;
+#middleDivInSecondRightMain{
+  border-left: solid 1px white;
+  border-right: solid 1px white;
+}
+.secondRightMain{
+  .row{
+
+    text-align: center;
+        div:first-child{
+          padding-top: 10px;
+        }
+        div {
+          padding: 5px;
+        }
+        span{
+          font-size: xx-large;
+        }
+  }
+}
+.thirdRightMain{
+  .row{
+    text-align: center;
+    div{
+      padding: 5px 0px 7px 0px;
+      span{
+        font-size: x-large;
+      }
+    }
+  }
+}
+#loginThirdRightMain{
+  border-right: solid 1px white;
+}
+.square{
+  width: 20px;
+  height: 15px;
+  color: $headerBasic-color;
+  background-color: white;
+  border-radius: 2px;
+  text-align: center;
+  text-wrap: normal;
 }
