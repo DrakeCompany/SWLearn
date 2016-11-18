@@ -76,11 +76,26 @@ body{
         float: left;
       }
       .footerRightUp{
-        float: right;
+
+        span{
+
+          left:20px;
+          padding-top:10px;
+          padding-left: 10px;
+
+          font-size: x-large;
+        }
       }
       .footerRightDown{
         float: right;
       }
+  #mediaIconsFooter{
+  float: right;
+    padding: 5px;
+  }
+  hr{
+    padding: 0px;
+  }
 }
 .glyphicon-share-alt{
   -webkit-transform:scaleX(-1);
