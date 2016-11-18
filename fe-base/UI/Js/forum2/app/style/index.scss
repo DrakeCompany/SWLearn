@@ -43,9 +43,10 @@ body{
 }
 .firstRightMain{
   width: 320px;
-
   height: 190px;
   background-color: $headerBasic-color;
+  //padding: 20px 20px;
+
 }
 #footer{
   position: fixed;
@@ -139,6 +140,9 @@ div.infoArticle{
   border-left:solid 1px #ECF0FF;
 
 }
+#rightMain{
+  color: white;
+}
 #rightSpace{
   background-color: $bodyBackground-color;
 }
@@ -148,6 +152,7 @@ div.infoArticle{
   height: 175px;
   background-color: $headerBasic-color;
 }
+
 #srch-term{
   background-color: $headerDarkerBasic-color;
   border: none;
@@ -177,4 +182,17 @@ div.infoArticle{
   padding-bottom: 6px;
 
 }
-
+.titleRightSide span{
+  float: right;
+}
+.titleRightSide hr{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.themeFirstRightMain span{
+  float: right;
+}
+.themeFirstRightMain hr{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
