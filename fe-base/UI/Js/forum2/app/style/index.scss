@@ -57,8 +57,30 @@ body{
 
 }
 #footer{
-  position: fixed;
-  bottom: 0;
+
+  height: 100px;
+  background-color: $headerBasic-color;
+  color: white;
+      .footerLeftUp{
+
+        float: left;
+          li{
+            float: left;
+
+              a{
+                display: block;
+              }
+          }
+      }
+      .footerLeftDown{
+        float: left;
+      }
+      .footerRightUp{
+        float: right;
+      }
+      .footerRightDown{
+        float: right;
+      }
 }
 .glyphicon-share-alt{
   -webkit-transform:scaleX(-1);
@@ -188,10 +210,10 @@ hr{
 .title{
   font-size: x-large;
   float: left;
-  //padding-left: 220px;
+
   font-style: italic;
   color: white;
-  //bottom: 30px;
+
 }
 
 .titleArticle{
