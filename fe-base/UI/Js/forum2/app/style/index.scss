@@ -29,6 +29,9 @@ body{
     background-color: $headerDarkerBasic-color;
   }
 }
+.clearfix{
+  clear: both;
+}
 .comment{
   color: $leftWordColor;
   font-size: 1em;
@@ -56,46 +59,44 @@ body{
       }
 
 }
-#footer{
+#footer {
 
   height: 100px;
   background-color: $headerBasic-color;
   color: white;
-      .footerLeftUp{
+  padding: 10px;;
+    hr{margin-top: 0px;
+    }
+}
 
-        float: left;
+.left{
+  float: left;
+  ul{
+    list-style-type:none ;
+    :first-child{
+      margin-left: -40px;
+    }
+  }
           li{
-            float: left;
 
-              a{
-                display: block;
+
+                float: left;
+                :before{
+                  content: '• '  }
+                  a{
+                    display: block;
+                    padding-left:45px;
+                    text-decoration: none;
+                    color: white;
+
+                  }
               }
-          }
-      }
-      .footerLeftDown{
-        float: left;
-      }
-      .footerRightUp{
-
-        span{
-
-          left:20px;
-          padding-top:10px;
-          padding-left: 10px;
-
-          font-size: x-large;
-        }
-      }
-      .footerRightDown{
-        float: right;
-      }
-  #mediaIconsFooter{
+}
+.right{
   float: right;
-    padding: 5px;
-  }
-  hr{
-    padding: 0px;
-  }
+    span{padding: 5px;
+      font-size: x-large;
+    }
 }
 .glyphicon-share-alt{
   -webkit-transform:scaleX(-1);
@@ -246,6 +247,7 @@ hr{
 }
 .titleRightSide span{
   float: right;
+  color: #81d2ec;
 
 }
 
@@ -296,4 +298,7 @@ hr{
   border-radius: 2px;
   text-align: center;
   text-wrap: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
