@@ -41,10 +41,11 @@ body{
   position:absolute;
   left: 43px;;
   padding-right: 80px;
-  padding-left: 25px
+  padding-left: 25px;
+  }
 
   //display: flex;
-}
+
 .firstRightMain{
   width: 320px;
   height: 190px;
@@ -240,6 +241,7 @@ hr{
   color: $headerBasic-color;
   padding-bottom: 6px;
 
+
 }
 .titleRightSide{
   padding: 20px;
@@ -250,7 +252,9 @@ hr{
   color: #81d2ec;
 
 }
-
+.titleUnder{
+  display: inline-block;
+}
 .themeFirstRightMain{
   padding: 10px 20px;
 }
@@ -301,4 +305,12 @@ hr{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.template{
+  display: none;
+}
+.modal{
+  display:none;
+  //width: 100%;
+  background-color: wheat;
 }

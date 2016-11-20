@@ -53,4 +53,50 @@ var data = {
             lastReplay:'08 11 2015 18:29 AM GMT+0100'
         },
     ]
+};
+
+modalSee();
+var $template = $('.template');
+function render() {
+        $('#leftMain').html('');
+
+    data.topics.forEach((topic)=>{
+        var $topic = $template.clone();
+        $topic.removeClass('template');
+        $topic.find('.titleArticle').html(topic.title);
+        $topic.find('.created').html(topic.created);
+        $topic.find('.category').html(topic.category);
+        $topic.find('.brief').html(topic.brief);
+        $topic.find('.views').html(topic.views);
+        $topic.find('.replay').html(topic.replay);
+        $topic.find('.lastReplay').html(topic.lastReplay);
+        $('#leftMain').append($topic);
+    })
+
 }
+render();
+function modalSee() {
+    $(document).on('click','.buttonModal',function () {
+            $(".modal").css('display','block');
+        });
+};
+
+function sendNewTopic() {
+    $(document).on('click','#submit',function () {
+         event.preventDefault();
+        data.topics.push({
+            title:$('#newTopic').find('#titleInput').val(),
+            created:$('#newTopic').find('#created').val(),
+            category:$('#newTopic').find('#category').val(),
+            brief:$('#newTopic').find('#brief').val(),
+            views:$('#newTopic').find('#views').val(),
+            replay:$('#newTopic').find('#replay').val(),
+            lastReplay:$('#newTopic').find('#lastReplay').val()
+        });
+        render();
+        $(".modal").css('display','none');
+
+    });
+
+}
+sendNewTopic();
