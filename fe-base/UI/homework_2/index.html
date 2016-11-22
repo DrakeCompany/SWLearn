@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Fórum</title>
-    <link href="style_1.css" type="text/css" rel="stylesheet">
+    <link href="style_1.css" id="styles"  type="text/css" rel="stylesheet">
+
 </head>
 <body>
 <nav role="navigation">
 
-    <a href="" id="main" role="menuitem">Main</a>
-    <a href="" id="registration" role="menuitem">Registration</a>
-    <a href="" id="administration" role="menuitem">Adminsistration</a>
+    <a href="#" id="main" role="menuitem">Main</a>
+    <a href="#" id="registration" role="menuitem">Registration</a>
+    <a href="#" id="administration" role="menuitem">Adminsistration</a>
 
     <div class="dropdown">
-        <button class="dropbtn" id="styles">Dropdown</button>
+        <button class="dropbtn">Styles</button>
         <div class="dropdown-content">
-            <a href="#">Link1</a>
-            <a href="#">Link2</a>
-            <a href="#">Link3</a>
+            <a href="#" onclick="document.getElementById('styles').href='style_1.css'">Style1</a>
+            <a href="#" onclick="document.getElementById('styles').href='style_2.css'">Style2</a>
+            <a href="bootstrap_index.html">Bootstrap</a>
         </div>
     </div>
 
@@ -30,12 +31,12 @@
     <section id="left">
         <article class="article" id="first_topic">
 
-                <div class="topic_title">Ez a képzés szuper</div>
-                <br>
                     <div class="topic_data">
                         <div class="topic_user_name">mindenki </div>
                         <div class="topic_date">11:58</div>
                     </div>
+                <div class="topic_title">Ez a képzés szuper</div>
+                <br>
                     <div class="topic_content">Szerintem ennél szuperebb képzés nincs a világon</div>
                 <div class="like_count">&#8734; ember kedveli ezt</div>
 
@@ -57,13 +58,13 @@
             </div>
         </article>
         <article class="article" id="second_topic">
-            <div class="topic_title">Kinél van pálinka</div>
-            <br>
             <div class="topic_data">
                 <div class="topic_user_name">Alkesz István</div>
                 <div class="topic_date">tegnap</div>
             </div>
-            <div class="topic_content">Szerintem ennél szuperebb képzés nincs a világon</div>
+            <div class="topic_title">Kinél van pálinka</div>
+            <br>
+            <div class="topic_content">Elfogyott az öszes pálinkám. Ismertek valakit, akitől vehetnék?</div>
             <div class="like_count">3 ember kedveli ezt</div>
         </article>
 

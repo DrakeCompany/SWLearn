@@ -9,7 +9,7 @@ nav{
     font-size: 22px;
     height:25px;
     left: 0;
-    min-width:480px;
+    min-width:600px;
     padding: 10px;
     position: fixed;
     text-align: left;
@@ -24,7 +24,7 @@ nav a{
     text-decoration: none;
 }
 nav a:hover{
-    background-color: #66F;
+    background-color: #3332ff;
 }
 button#name_button{
     padding: 3px;
@@ -65,9 +65,7 @@ button#name_button{
 }
 .topic_data{
     padding-right: 2px;
-    position: absolute;
-    right: 0;
-    top: 0;
+    float: right;
 
 }
 .coments_content{
@@ -84,69 +82,55 @@ button#name_button{
 .joke_label{
     font-size: x-large;
 }
-/*#styles{
-    background-color:#88F ;
-    border-radius: 7px;
-    color: white;
-    padding: 3px;
-    font-size: 20px;
-    font-weight: bold;
-    position: relative;
-    bottom:5px;
-    left: 30%;
-    font-family: Arial, Helvetica, sans-serif;
-}*/
+
 .dropbtn {
-   /* background-color: #4CAF50;
+    background-color: #88F;
     color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;*/
+    border-radius: 7px;
+    padding: 3px;
+    font-size: 22px;
+    border: none;
     cursor: pointer;
 }
 
 .dropdown {
-    position: relative;
     display: inline-flex;
     max-height: 20px;
-
-    background-color:#88F ;
-    border-radius: 7px;
-    color: white;
-    padding: 3px;
-    font-size: 20px;
-    font-weight: bold;
-    position: relative;
-    bottom:5px;
-    left: 30%;
     font-family: Arial, Helvetica, sans-serif;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-left: 50px;
 }
 
 .dropdown-content {
     display: none;
-    position: absolute;
+   position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 7px;
+
 }
 
 .dropdown-content a {
-    color: black;
+    color: white;
     padding: 3px;
     text-decoration: none;
     display: block;
     float: right;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.dropdown:hover .dropdown-content {
-    display: inline-flex;
-    align-items: flex-start;
-
-
+.dropdown-content a:hover {
+    background-color:  #3332ff;
+    overflow: auto;
+    transition: all 2s;
 }
 
-.dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+.dropdown:hover .dropdown-content {
+/*[if IE]*/
+    display: inline-flex;
+    align-items: flex-start;
+/*[endif]*/
+    background-color: #3332ff;
+   /* display: inline-block;
+    position: absolute;
+    bottom: 2px;*/
 }

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="timer">katt</div>
+<div id="key">key</div>
+<div id="writeToScreen"></div>
+
+<script>
+    var count=30;
+
+    function  countBack () {
+           // console.log(count--);
+            count--;
+            if (count<=0){
+               console.log("kisebb") ;
+                 window.clearInterval(intervalId);
+
+            }
+            document.getElementById('timer').innerHTML=count;
+
+    }
+    var  intervalId=setInterval(countBack,1000);
+    window.addEventListener('keydown',function (event) {
+        console.log(event);
+        document.getElementById('key').innerHTML=event.key;
+        if(event.key==x){
+            console.log("talált:"+x);
+            console.log("Eltaláltad!");
+            document.getElementById('writeToScreen').innerHTML="Sikerült eltalálni!"
+        }
+
+
+    })
+
+    function generator(from,to) {
+        function generate() {
+
+            return Math.floor(Math.random()*(from-to)+to);
+        }
+        return generate;
+    }
+    var gen=generator(0,9);
+    var x=gen();
+
+
+</script>
+<nav onclick="console.log(gen());">random</nav>
+</body>
+</html>

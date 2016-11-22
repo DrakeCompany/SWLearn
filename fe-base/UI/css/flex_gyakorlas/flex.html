@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex</title>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: space-between;
+            align-items: center;
+            background-color: #9acfea;
+            height: 500px;
+        }
+
+        .flex-item:nth-child(1) {
+            order: 0;
+            flex: 0 01 50px;
+            align-self: stretch;
+            background-color: #00a3d9;
+            height: inherit;
+
+        }
+
+        .flex-item:nth-child(2) {
+            order: 0;
+            flex: 2 1 auto;
+            align-self: stretch;
+            background-color: #00FF00;
+            height: inherit;
+        }
+
+        .flex-item:nth-child(3) {
+            order: 0;
+            flex: 0 1 100px;
+            align-self: stretch;
+            background-color: #2b542c;
+            height: inherit;
+        }
+
+    </style>
+</head>
+<body>
+<div class="flex-container">
+    Flesz kontainer
+    <div class="flex-item">
+        Elso
+    </div>
+    <div class="flex-item">
+        masodik
+        <p>
+            Lorem ipsum dolor sit amet, persius legendos in eos, ut per wisi errem vulputate. Qui autem audiam vidisse in, ius percipit patrioque eu. Eam tibique mediocritatem ne, mea cu quod oblique, reprimique interpretaris per an. Mei eu hinc cibo intellegam, te nec semper qualisque laboramus. Te fierent pertinax vulputate duo, ius alia elit ceteros in, cu idque aliquam ius.
+
+            Errem praesent no duo, diam aperiri commune mei ei, ei sapientem dignissim vix. Pri tritani discere cu. Usu id iriure eripuit nusquam, ei est oporteat reprimique, et has nibh virtute. Eu sea purto idque dicta, vis in debitis gubergren temporibus, ei persequeris referrentur mel. Eu rebum omittam disputando his. Ei vocibus partiendo persecuti his, ad pri meis eripuit repudiandae.
+
+            Stet ponderum forensibus in pri. Impedit docendi elaboraret ea mei. Liber theophrastus cu has, cu utinam viderer vis. Mea ne delenit invidunt sadipscing. Sint suscipit cu vis, ex unum fierent sed. No simul quaeque necessitatibus vis, nec tincidunt incorrupte dissentias an.
+
+            No pro omnesque democritum. Per singulis disputationi ea, eos duis maluisset te. Accommodare ullamcorper definitiones pri at, populo salutatus voluptatum ius ut. Ei omittam accusamus mel, blandit maluisset neglegentur eos ea. Sumo constituam definitionem cum eu. Mel at debitis intellegebat deterruisset.
+
+            Sea salutandi assentior ex, ne mei mandamus comprehensam. Quod perfecto adipiscing ut vix, altera vituperata te per. No quot eloquentiam ius. Vel unum oratio te, in adipisci conclusionemque pri.
+        </p>
+    </div>
+    <div class="flex-item">
+        harmadik
+    </div>
+</div>
+
+</body>
+</html>

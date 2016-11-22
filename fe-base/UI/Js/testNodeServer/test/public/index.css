@@ -1,0 +1,13 @@
+form {
+    padding: 15px;
+    margin: 25px auto;
+    width: 200px;
+    border: 1px solid gray;
+    background-color: #52ee49;
+    text-align: center;
+}
+input {
+    width: 100%;
+    display: block;
+    margin: 15px 0;
+}

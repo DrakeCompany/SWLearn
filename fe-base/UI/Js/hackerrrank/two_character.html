@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Two_Character</title>
+</head>
+<body>
+<script>
+    var inputLength = prompt("Add meg a hosszát a betűknek");
+    var inputCharacters= prompt("Add meg a kraktereket:");
+    var newstring ="";
+    var newlength=0;
+    var stringBase = [];
+    newWord(inputLength,inputCharacters);
+    function newWord(length,characters) {
+
+        for (var i =1; i<length; i++){
+            var first = characters.charAt(i-1);
+            var next = characters.charAt(i);
+            if (first==next){
+                console.log(characters.charAt(i-1));
+                newstring = characters.split(first).join('');
+                newlength= newstring.length;
+                newWord(newlength,newstring);
+            }
+        }
+        console.log(newstring);
+
+//        stringBase = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','_'];
+//        for(var i=0; i<stringBase.length; i++){
+//            stringBase[i]=0;
+//        }
+//        for(var i=0; i<stringBase.length; i++){
+//            for(var z=0; z<newlength; z++){
+//
+//                if(stringBase[i]==newstring.charAt(z)){
+//                    stringBase[i]++;
+//                    console.log(stringBase[i]);
+//                }
+//            }
+//        }
+//
+//
+        var newStringToArray= newstring.split("");
+        var newStringToObjects=[];
+        for(var z=0; z<newStringToArray.length; z++){
+            newStringToObjects[newStringToArray[z]]=0;
+           // newStringToObjects.push({character:newStringToArray[z],count:0});
+        }
+        for(var z=0; z<newStringToArray.length; z++){
+            newStringToObjects[newStringToArray[z]]++;
+        }
+
+        if (!Object.keys) {
+            Object.keys = function (newStringToObjects) {
+                var arr = [],
+                        key;
+                for (key in newStringToObjects) {
+                    if (newStringToObjects.hasOwnProperty(key)) {
+                        arr.push(key);
+                    }
+                }
+                return arr;
+            };
+        }
+
+        Object.keys(newStringToObjects).length;
+
+    console.log(newstring.length);
+        console.log(newStringToArray);
+        console.log(newStringToObjects);
+        console.log( Object.keys(newStringToObjects).length);
+
+    }
+
+</script>
+
+</body>
+</html>

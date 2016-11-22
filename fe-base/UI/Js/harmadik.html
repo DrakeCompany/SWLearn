@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+//    function random(min,max) {
+//        var x=0;
+//        function inner() {
+//           x=Math.random()*(max-min) +min;
+//            console.log(x)
+//        }
+//    return inner;
+//
+//    }
+    function generator(from,to) {
+        function generate() {
+            return Math.random()*(from-to)+to;
+        }
+        return generate;
+    }
+    var gen=generator(1,9);
+    gen();
+    var generate2=generator(100,120);
+
+</script>
+<nav onclick="console.log(gen());">random</nav>
+
+</body>
+</html>
