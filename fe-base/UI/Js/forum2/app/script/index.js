@@ -57,10 +57,10 @@ var data = {
 
 modalSee();
 var $template = $('.template');
-function render() {
+function render(response) {
         $('#leftMain').html('');
 
-    data.topics.forEach((topic)=>{
+    response.forEach((topic)=>{
         var $topic = $template.clone();
         $topic.removeClass('template');
         $topic.find('.titleArticle').html(topic.title);
@@ -70,21 +70,46 @@ function render() {
         $topic.find('.views').html(topic.views);
         $topic.find('.replay').html(topic.replay);
         $topic.find('.lastReplay').html(topic.lastReplay);
+        $topic.find('.deleteTopic').data('id',topic.id);
+
         $('#leftMain').append($topic);
     })
 
 }
-render();
+
 function modalSee() {
     $(document).on('click','.buttonModal',function () {
             $(".modal").css('display','block');
         });
 };
 
-function sendNewTopic() {
-    $(document).on('click','#submit',function () {
+function sendNewTopic(response) {
+    $(document).on('click','#submit',function (event) {
          event.preventDefault();
-        data.topics.push({
+        var send ={
+            title:$('#newTopic').find('#titleInput').val(),
+            created:$('#newTopic').find('#created').val(),
+            category:$('#newTopic').find('#category').val(),
+            brief:$('#newTopic').find('#brief').val(),
+            views:$('#newTopic').find('#views').val(),
+            replay:$('#newTopic').find('#replay').val(),
+            lastReplay:$('#newTopic').find('#lastReplay').val()
+        };
+        $.ajax({
+            method: "POST",
+            url: "/topics",
+            data: JSON.stringify(send),
+            dataType: 'json',
+            contentType: 'application/json;charset=UTF-8'
+        })
+            .then(function(resp) {
+                console.log(resp);
+            })
+            .catch(function(error) {
+                console.error(error);
+            });
+
+        response.push({
             title:$('#newTopic').find('#titleInput').val(),
             created:$('#newTopic').find('#created').val(),
             category:$('#newTopic').find('#category').val(),
@@ -93,10 +118,42 @@ function sendNewTopic() {
             replay:$('#newTopic').find('#replay').val(),
             lastReplay:$('#newTopic').find('#lastReplay').val()
         });
-        render();
+
+        render(response);
         $(".modal").css('display','none');
 
     });
 
 }
-sendNewTopic();
+
+
+function writeToConsole(response2) {
+
+    console.log(response2);
+}
+
+$.get('./topics').then(function (response2) {
+    writeToConsole(response2);
+    render(response2);
+    sendNewTopic(response2);
+});//callback
+// console.log($.get('./topics').response);
+
+function deleteActTopic() {
+    $(document).on('click', '.deleteTopic',function (event) {
+        event.preventDefault();
+       var id= $(this).data('id');
+        $.ajax({
+            method: 'DELETE',
+            url: '/topics/' + id
+        }).then(function () {// thennel akkor fut le, amikor az az előtte lévő lefutott
+            $.get('./topics').then(function (response2) {
+                writeToConsole(response2);
+                render(response2);
+            });
+        });//callback
+
+    })
+
+}
+deleteActTopic();
