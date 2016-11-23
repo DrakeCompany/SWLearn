@@ -63,9 +63,9 @@
                         <div><button class="deleteTopic" type="submit" id="delTopic">x</button></div>
                         <div class="clearfix"></div>
                         <div class="infoArticle "><span class="glyphicon glyphicon-eye-open">&nbsp;</span><span class="views"></span> &nbsp;<span>View</span></div>
-                        <div class="infoArticle "><i class="fa fa-comments-o">&nbsp;</i><span class="replay"></span> <span>&nbsp;Reply</span></div>
-                        <!--<div class="infoArticle"><span class="glyphicon glyphicon-time"></span>&nbsp;47<span>&nbsp;Minutes</span></div>-->
-                        <div class="infoArticle lastReplay"><span class="glyphicon glyphicon-share-alt"></span>&nbsp;24<span>&nbsp;Minutes</span></div>
+                        <div class="infoArticle "><span class="fa fa-comments-o">&nbsp;&nbsp; </span><span class="replay"></span> <span>&nbsp;Reply</span></div>
+                        <div class="infoArticle"><span class="glyphicon glyphicon-time">&nbsp;</span><span class="leftTime"></span><span class="leftTimeUnit">&nbsp;Minutes</span></div>
+                        <div class="infoArticle "><span class="glyphicon glyphicon-share-alt">&nbsp;</span><span class="lastReplay"></span><span>&nbsp;Minutes</span></div>
                     </div>
                 </article>
             </section>
@@ -119,12 +119,17 @@
                 Modal
                 <form  enctype="text/plain" id="newTopic">
                     <div><label for="titleInput">Title</label><input id="titleInput" type="text"></div>
-                    <div><label for="created">created</label><input id="created" type="datetime"></div>
-                    <div><label for="category">category</label><input id="category" type="text"></div>
+
+                    <div><label for="category">category</label>
+                        <select id="category" type="text">
+                            <option value="General">General</option>
+                            <option value="Video">Video</option>
+                            <option value="Audio">Audio</option>
+                            <option value="Pictures">Pictures</option>
+                        </select>
+                    </div>
+
                     <div><label for="brief">brief</label><input id="brief" type="text"></div>
-                    <div><label for="views">views</label><input id="views" type="text"></div>
-                    <div><label for="replay">replay</label><input id="replay" type="text"></div>
-                    <div><label for="lastReplay">lastReplay</label><input id="lastReplay" type="datetime"></div>
                     <button type="submit" id="submit">Send</button>
 
 

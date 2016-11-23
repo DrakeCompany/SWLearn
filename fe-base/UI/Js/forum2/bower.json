@@ -10,7 +10,8 @@
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components"
+    "bower_components",
+    "app/bower_components"
   ],
   "dependencies": {
     "bootstrap": "^3.3.7"

@@ -10,6 +10,7 @@ var data = {
             brief: 'Work hard for what you want because it wont come to you without a fight. You have to be strong and courageous and know...',
             views:10,
             replay:1,
+            leftTime:0,
             lastReplay:'09 11 2015 11:52:11 GMT+0100'
         }, {
             title:'lorum ipsum test by member',
@@ -62,6 +63,16 @@ function render(response) {
 
     response.forEach((topic)=>{
         var $topic = $template.clone();
+        var leftTimeCount = Math.floor((new Date()-new Date(topic.created))/1000/60);
+        if(leftTimeCount >60){
+            leftTimeCount=Math.floor((new Date()-new Date(topic.created))/1000/60/60);
+            $topic.find('.leftTimeUnit').html(" Hours");
+            // document.getElementsByClassName("leftTimeUnit").innerHTML=" Hours";
+            if(leftTimeCount>24){
+                leftTimeCount=Math.floor((new Date()-new Date(topic.created))/1000/60/60/24);
+                $topic.find('.leftTimeUnit').html(" Days");
+            }
+        }
         $topic.removeClass('template');
         $topic.find('.titleArticle').html(topic.title);
         $topic.find('.created').html(topic.created);
@@ -69,6 +80,7 @@ function render(response) {
         $topic.find('.brief').html(topic.brief);
         $topic.find('.views').html(topic.views);
         $topic.find('.replay').html(topic.replay);
+        $topic.find('.leftTime').html(leftTimeCount);
         $topic.find('.lastReplay').html(topic.lastReplay);
         $topic.find('.deleteTopic').data('id',topic.id);
 
@@ -88,12 +100,13 @@ function sendNewTopic(response) {
         event.preventDefault();
         var send ={
             title:$('#newTopic').find('#titleInput').val(),
-            created:$('#newTopic').find('#created').val(),
+            created:new Date(),
             category:$('#newTopic').find('#category').val(),
             brief:$('#newTopic').find('#brief').val(),
-            views:$('#newTopic').find('#views').val(),
-            replay:$('#newTopic').find('#replay').val(),
-            lastReplay:$('#newTopic').find('#lastReplay').val()
+            views:0,
+            replay:0,
+            leftTime:0,
+            lastReplay:0
         };
         $.ajax({
             method: "POST",
@@ -109,15 +122,7 @@ function sendNewTopic(response) {
                 console.error(error);
             });
 
-        response.push({
-            title:$('#newTopic').find('#titleInput').val(),
-            created:$('#newTopic').find('#created').val(),
-            category:$('#newTopic').find('#category').val(),
-            brief:$('#newTopic').find('#brief').val(),
-            views:$('#newTopic').find('#views').val(),
-            replay:$('#newTopic').find('#replay').val(),
-            lastReplay:$('#newTopic').find('#lastReplay').val()
-        });
+        response.push(send);
 
         render(response);
         $(".modal").css('display','none');
