@@ -1,0 +1,21 @@
+{
+  "name": "testBower",
+  "homepage": "https://github.com/DrakeCompany/SWLearn",
+  "authors": [
+    "kovacssandorUI <sandorkovacs122@gmail.com>"
+  ],
+  "description": "Test the Bower",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "^2.3.2"
+  }
+}
