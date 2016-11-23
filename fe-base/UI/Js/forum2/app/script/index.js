@@ -58,7 +58,7 @@ var data = {
 modalSee();
 var $template = $('.template');
 function render(response) {
-        $('#leftMain').html('');
+    $('#leftMain').html('');
 
     response.forEach((topic)=>{
         var $topic = $template.clone();
@@ -73,19 +73,19 @@ function render(response) {
         $topic.find('.deleteTopic').data('id',topic.id);
 
         $('#leftMain').append($topic);
-    })
+    });
 
 }
 
 function modalSee() {
     $(document).on('click','.buttonModal',function () {
-            $(".modal").css('display','block');
-        });
+        $(".modal").css('display','block');
+    });
 };
 
 function sendNewTopic(response) {
     $(document).on('click','#submit',function (event) {
-         event.preventDefault();
+        event.preventDefault();
         var send ={
             title:$('#newTopic').find('#titleInput').val(),
             created:$('#newTopic').find('#created').val(),
@@ -142,7 +142,7 @@ $.get('./topics').then(function (response2) {
 function deleteActTopic() {
     $(document).on('click', '.deleteTopic',function (event) {
         event.preventDefault();
-       var id= $(this).data('id');
+        var id= $(this).data('id');
         $.ajax({
             method: 'DELETE',
             url: '/topics/' + id
