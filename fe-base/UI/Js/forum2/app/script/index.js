@@ -66,7 +66,7 @@ function render(response) {
         var leftTimeCount = Math.floor((new Date()-new Date(topic.created))/1000/60);
         if(leftTimeCount >60){
             leftTimeCount=Math.floor((new Date()-new Date(topic.created))/1000/60/60);
-            $topic.find('.leftTimeUnit').html(" Hours");
+            $topic.find('.leftTimeUnit').html(" Hours"); //.css('color','blue'); :-)
             // document.getElementsByClassName("leftTimeUnit").innerHTML=" Hours";
             if(leftTimeCount>24){
                 leftTimeCount=Math.floor((new Date()-new Date(topic.created))/1000/60/60/24);
@@ -83,10 +83,8 @@ function render(response) {
         $topic.find('.leftTime').html(leftTimeCount);
         $topic.find('.lastReplay').html(topic.lastReplay);
         $topic.find('.deleteTopic').data('id',topic.id);
-
         $('#leftMain').append($topic);
     });
-
 }
 
 function modalSee() {
@@ -157,8 +155,6 @@ function deleteActTopic() {
                 render(response2);
             });
         });//callback
-
     })
-
 }
 deleteActTopic();

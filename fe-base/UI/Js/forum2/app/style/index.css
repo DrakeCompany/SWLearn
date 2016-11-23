@@ -133,6 +133,11 @@ div.infoArticle {
   padding-left: 1em;
   color: #9ea6ab; }
 
+.modButton {
+  position: relative;
+  top: 0;
+  left: -6px; }
+
 .pull-left {
   padding-top: 15px;
   padding-left: 6%; }
