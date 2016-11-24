@@ -63,7 +63,7 @@
 
                     <div class="rightInfo">
                         <div><button class="deleteTopic" type="submit" id="delTopic">x</button></div>
-                        <div ><button class="modButton buttonModal">mod</button></div>
+                        <div><button class="modButton" type="submit" id="modButton">mod</button></div>
                         <div class="clearfix"></div>
                         <div class="infoArticle "><span class="glyphicon glyphicon-eye-open">&nbsp;</span><span class="views"></span> &nbsp;<span>View</span></div>
                         <div class="infoArticle "><span class="fa fa-comments-o">&nbsp;&nbsp; </span><span class="replay"></span> <span>&nbsp;Reply</span></div>
@@ -132,6 +132,22 @@
                     </div>
                     <div><label for="brief">brief</label><input id="brief" type="text"></div>
                     <button type="submit" id="submit">Send</button>
+                </form>
+            </div>
+            <div class="modModal">
+                modModal
+                <form  enctype="text/plain" id="modTopic">
+                    <div><label for="titleInput">Title</label><input id="modTitleInput" type="text"></div>
+                    <div><label for="category">category</label>
+                        <select id="modCategory" type="text">
+                            <option value="General">General</option>
+                            <option value="Video">Video</option>
+                            <option value="Audio">Audio</option>
+                            <option value="Pictures">Pictures</option>
+                        </select>
+                    </div>
+                    <div><label for="brief">brief</label><input id="modBrief" type="text"></div>
+                    <button type="submit" id="modSubmit">Mod</button>
                 </form>
             </div>
         </div>
