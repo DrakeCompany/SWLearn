@@ -106,6 +106,16 @@ function  modModalSee(){
         searchView=$(this).data('view');
         console.log("searchId:")
         console.log(searchId);
+        $.get('./topics').then(function (response3) {
+            response3.forEach((topic)=>{
+                if(topic.id== searchId){
+                    $('#modTitleInput').val(topic.title);
+                    $('#modCategory').val(topic.category);
+                    $('#modBrief').val(topic.brief);
+                }
+            })
+        });
+
         $(".modModal").css('display','block');
     });
 };
@@ -167,7 +177,7 @@ function deleteActTopic() {
                 writeToConsole(response2);
                 render(response2);
             });
-        });//callback
+        });
     })
 }
 deleteActTopic();
@@ -179,6 +189,7 @@ function modTopic() {
         var views2 =0;
         var replay2 =0;
         var lastReplay2=0;
+
         $.get('./topics').then(function (response3) {
             response3.forEach((topic)=>{
                 if(topic.id== searchId){
@@ -214,7 +225,6 @@ function modTopic() {
                 console.log(response);
                 console.log("searchId:")
                 console.log(searchId);
-                // render(response);
                 $.get('./topics').then(function (response2) {
                     writeToConsole(response2);
                     render(response2);
@@ -234,5 +244,4 @@ $.get('./topics').then(function (response2) {
     writeToConsole(response2);
     render(response2);
     sendNewTopic(response2);
-});//callback
-// console.log($.get('./topics').response);
+});
