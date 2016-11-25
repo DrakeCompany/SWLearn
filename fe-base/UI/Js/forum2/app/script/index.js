@@ -63,15 +63,15 @@ var $template = $('.template');
 function render(response) {
     $('#leftMain').html('');
 
-    response.forEach((topic)=>{
+    response.forEach((topic)=> {
         var $topic = $template.clone();
-        var leftTimeCount = Math.floor((new Date()-new Date(topic.created))/1000/60);
-        if(leftTimeCount >60){
-            leftTimeCount=Math.floor((new Date()-new Date(topic.created))/1000/60/60);
+        var leftTimeCount = Math.floor((new Date() - new Date(topic.created)) / 1000 / 60);
+        if (leftTimeCount > 60) {
+            leftTimeCount = Math.floor((new Date() - new Date(topic.created)) / 1000 / 60 / 60);
             $topic.find('.leftTimeUnit').html(" Hours"); //.css('color','blue'); :-)
             // document.getElementsByClassName("leftTimeUnit").innerHTML=" Hours";
-            if(leftTimeCount>24){
-                leftTimeCount=Math.floor((new Date()-new Date(topic.created))/1000/60/60/24);
+            if (leftTimeCount > 24) {
+                leftTimeCount = Math.floor((new Date() - new Date(topic.created)) / 1000 / 60 / 60 / 24);
                 $topic.find('.leftTimeUnit').html(" Days");
             }
         }
@@ -84,31 +84,31 @@ function render(response) {
         $topic.find('.replay').html(topic.replay);
         $topic.find('.leftTime').html(leftTimeCount);
         $topic.find('.lastReplay').html(topic.lastReplay);
-        $topic.find('.deleteTopic').data('id',topic.id);
-        $topic.find('.modButton').data('id',topic.id);
+        $topic.find('.deleteTopic').data('id', topic.id);
+        $topic.find('.modButton').data('id', topic.id);
         $('#leftMain').append($topic);
     });
 }
 
 function modalSee() {
-    $(document).on('click','.buttonModal',function () {
-        $(".modal").css('display','block');
+    $(document).on('click', '.buttonModal', function () {
+        $(".modal").css('display', 'block');
     });
 };
 
 
- var searchId=0;
+var searchId = 0;
 
-function  modModalSee(){
-    $(document).on('click','.modButton',function (event) {
+function modModalSee() {
+    $(document).on('click', '.modButton', function (event) {
         event.preventDefault();
-        searchId=$(this).data('id');
-        searchView=$(this).data('view');
-        console.log("searchId:")
-        console.log(searchId);
+        searchId = $(this).data('id');
+        // // searchView = $(this).data('view');
+        // console.log("searchId:")
+        // console.log(searchId);
         $.get('./topics').then(function (response3) {
-            response3.forEach((topic)=>{
-                if(topic.id== searchId){
+            response3.forEach((topic)=> {
+                if (topic.id == searchId) {
                     $('#modTitleInput').val(topic.title);
                     $('#modCategory').val(topic.category);
                     $('#modBrief').val(topic.brief);
@@ -116,22 +116,22 @@ function  modModalSee(){
             })
         });
 
-        $(".modModal").css('display','block');
+        $(".modModal").css('display', 'block');
     });
 };
 modModalSee();
 function sendNewTopic(response) {
-    $(document).on('click','#submit',function (event) {
+    $(document).on('click', '#submit', function (event) {
         event.preventDefault();
-        var send ={
-            title:$('#newTopic').find('#titleInput').val(),
-            created:new Date(),
-            category:$('#newTopic').find('#category').val(),
-            brief:$('#newTopic').find('#brief').val(),
-            views:0,
-            replay:0,
-            leftTime:0,
-            lastReplay:0
+        var send = {
+            title: $('#newTopic').find('#titleInput').val(),
+            created: new Date(),
+            category: $('#newTopic').find('#category').val(),
+            brief: $('#newTopic').find('#brief').val(),
+            views: 0,
+            replay: 0,
+            leftTime: 0,
+            lastReplay: 0
         };
         $.ajax({
             method: "POST",
@@ -140,18 +140,18 @@ function sendNewTopic(response) {
             dataType: 'json',
             contentType: 'application/json;charset=UTF-8'
         })
-            .then(function(resp) {
+            .then(function (resp) {
                 console.log("resp:")
                 console.log(resp);
             })
-            .catch(function(error) {
+            .catch(function (error) {
                 console.error(error);
             });
 
         response.push(send);
 
         render(response);
-        $(".modal").css('display','none');
+        $(".modal").css('display', 'none');
 
     });
 }
@@ -162,17 +162,17 @@ function writeToConsole(response2) {
 }
 
 function deleteActTopic() {
-    $(document).on('click', '.deleteTopic',function (event) {
+    $(document).on('click', '.deleteTopic', function (event) {
         event.preventDefault();
-        var id= $(this).data('id');
-        console.log("id:")
-        console.log(id);
+        var id = $(this).data('id');
+        // console.log("id:")
+        // console.log(id);
         $.ajax({
             method: 'DELETE',
             url: '/topics/' + id
         }).then(function () {// thennel akkor fut le, amikor az az előtte lévő lefutott
-            console.log("id:")
-            console.log(id);
+            // console.log("id:")
+            // console.log(id);
             $.get('./topics').then(function (response2) {
                 writeToConsole(response2);
                 render(response2);
@@ -186,33 +186,33 @@ function modTopic() {
     $(document).on('click', '#modSubmit', function (event) {
         event.preventDefault();
 
-        var views2 =0;
-        var replay2 =0;
-        var lastReplay2=0;
+        var views2 = 0;
+        var replay2 = 0;
+        var lastReplay2 = 0;
 
         $.get('./topics').then(function (response3) {
-            response3.forEach((topic)=>{
-                if(topic.id== searchId){
-                   views2 = topic.views;
-                   replay2 = topic.replay;
-                   lastReplay2 = topic.lastReplay;
+            response3.forEach((topic)=> {
+                if (topic.id == searchId) {
+                    views2 = topic.views;
+                    replay2 = topic.replay;
+                    lastReplay2 = topic.lastReplay;
                 }
             });
         })
-        
+
         var send = {
             title: $('#modTopic').find('#modTitleInput').val(),
             created: new Date(),
             category: $('#modTopic').find('#modCategory').val(),
             brief: $('#modTopic').find('#modBrief').val(),
             views: views2,
-            replay:replay2 ,
+            replay: replay2,
             leftTime: 0,
             lastReplay: lastReplay2,
-            id:searchId
+            id: searchId
         };
-        console.log("searchView:");
-        console.log(searchView);
+        // console.log("searchView:");
+        // console.log(searchView);
         $.ajax({
             method: 'PUT',
             url: '/topics/' + searchId,
@@ -221,23 +221,23 @@ function modTopic() {
             contentType: 'application/json;charset=UTF-8'
         })
             .then(function (response) {
-                console.log("response:")
-                console.log(response);
-                console.log("searchId:")
-                console.log(searchId);
+                // console.log("response:")
+                // console.log(response);
+                // console.log("searchId:")
+                // console.log(searchId);
                 $.get('./topics').then(function (response2) {
                     writeToConsole(response2);
                     render(response2);
                 });
-                })
+            })
             .catch(function (error) {
-                        console.error(error);
-                    });
-        $(".modModal").css('display', 'none');
+                console.error(error);
             });
+        $(".modModal").css('display', 'none');
+    });
 
 
-    };
+};
 
 modTopic();
 $.get('./topics').then(function (response2) {
