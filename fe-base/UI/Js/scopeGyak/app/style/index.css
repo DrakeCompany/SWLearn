@@ -255,7 +255,7 @@ hr {
   align-items: center; }
 
 .modal {
-  display: none;
+  display: block;
   background-color: wheat; }
 
 .deleteTopic {

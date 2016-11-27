@@ -2,9 +2,12 @@
 <html lang="en" ng-app="myApp" ng-controller="firstController">
 <head>
     <meta charset="UTF-8">
-    <title>{{name}}</title>
+    <title>{{title}}</title>
     <link href="bower_components/bootstrap/dist/css/bootstrap.css" type="text/css" rel="stylesheet">
     <link href="style/index.css" type="text/css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
@@ -33,9 +36,10 @@
     </header>
 </div>
 <div class="container">
+    <input type="text" ng-model="title">
     <div class="row">
         <div class="col-sm-1 col-md-1" id="leftSpace">
-            <button class="buttonModal">+</button>
+            <button class="buttonModal" ng-click="displayModalSee()">+</button>
 
         </div>
         <div class="col-sm-7 col-md-7" id="leftContent">
@@ -67,10 +71,10 @@
 
         <div class="rightInfo">
             <div>
-                <button class="deleteTopic" type="submit" id="delTopic">x</button>
+                <button class="deleteTopic" type="submit" id="delTopic" ng-click="topicDelete(topic.id)">x</button>
             </div>
             <div>
-                <button class="modButton" type="submit" id="modButton" >mod</button>
+                <button class="modButton" type="submit" id="modButton" ng-click="openTopic(topic)">mod</button>
             </div>
             <div class="clearfix"></div>
             <div class="infoArticle "><span class="glyphicon glyphicon-eye-open">&nbsp;</span><span
@@ -141,6 +145,24 @@
                 </div>
             </section>
         </div>
+        <div class="modal" ng-if="displayModal">
+            Modal
+            <form enctype="text/plain" id="newTopic">
+                <div><label for="titleInput">Title</label><input id="titleInput" type="text" ng-model="newTopic.title"></div>
+                <div><label for="category">category</label>
+                    <select id="category" type="text" ng-model="newTopic.category">
+                        <option value="General">General</option>
+                        <option value="Video">Video</option>
+                        <option value="Audio">Audio</option>
+                        <option value="Pictures">Pictures</option>
+                    </select>
+                </div>
+                <div><label for="brief">brief</label><input id="brief" type="text" ng-model="newTopic.brief"></div>
+                <button id="submit"  ng-if="!modify" ng-click="addTopic()">Send</button>
+                <button id="mod" ng-if="modify" ng-click="modTopic()">Modify</button>
+            </form>
+        </div>
+
 <script src="bower_components/angular/angular.js"></script>
 <script src="script/index.js"></script>
 </body>
