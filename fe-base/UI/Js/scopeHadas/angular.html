@@ -1,0 +1,53 @@
+<html ng-app="ZsocaRulz">
+<head>
+    <style>
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            angular
+                    .module('HadasRulz', []);
+            angular
+                    .module('HadasRulz')
+                    .controller('alma', Alma);
+
+            function Alma($scope) {
+                $scope.ize = 'valami';
+                $scope.valtozz = valtozz;
+
+                function valtozz() {
+                    $scope.$emit('myEvent');
+                }
+            }
+
+            angular
+                    .module('ZsocaRulz', ['HadasRulz'])
+                    .controller('first', First);
+
+            function First($scope) {
+                $scope.hello = 'hi';
+                $scope.add = add;
+                $scope.$on('myEvent', function () {
+                    $scope.hello = 'Szia!';
+                });
+
+                function add(a, b) {
+                    return a + ' + ' + b + ' = ' + (a + b);
+                }
+            }
+        })();
+    </script>
+</head>
+<body ng-controller="first">
+<div>1. {{hello}}</div>
+<div>2. {{add(2, 5)}}</div>
+<div>3. {{add(20, 40)}}</div>
+<div ng-controller="alma">
+    4. {{ize}}
+    <button ng-click="valtozz()">
+        Változz öcsém!
+    </button>
+</div>
+</body>
+</html>

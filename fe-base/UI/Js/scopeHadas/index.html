@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="app" ng-controller="ctrl">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>{{name}}</title>
+    <style>
+        .red {
+            background-color: red;
+        }
+
+        .yellow {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+<button ng-click="valtssss($event)">jkl</button>
+<div ng-class="{red: value, yellow: value2}">Szia</div>
+<div ng-class="value ? 'red' : 'yellow'">Szia</div>
+<div ng-bind-html="html"></div>
+<div ng-style="style">jkljl</div>
+<ul>
+    <li ng-repeat="x in [10, 20, 30, 40, 50]">
+        {{($index + 1) + ' - ' + x}} {{$first ? ' első wok' : ''}}
+    </li>
+</ul>
+<select
+        ng-model="alma"
+        ng-change="lekerdezes()"
+        ng-options="x.a as x.b for x in [{a: 'index.html', b: 'html'}, {a: 'hjaj.html', b: 'js'}]">
+</select>
+<div>alma: {{alma}}</div>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
