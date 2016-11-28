@@ -7,14 +7,33 @@ angular
     .controller('firstController', alma);
 
 
+var loadTopics = function ($scope, response) {
+    $scope.topics = response.data;
+    angular.forEach($scope.topics, function (value, key) {
+        var leftTimeUnit = "Minutes";
+        var leftTimeCount = Math.floor((new Date() - new Date(value.created)) / 1000 / 60);
+        if (leftTimeCount > 60) {
+            leftTimeCount = Math.floor((new Date() - new Date(value.created)) / 1000 / 60 / 60);
+            leftTimeUnit = "Hours";
+            if (leftTimeCount > 24) {
+                leftTimeCount = Math.floor((new Date() - new Date(value.created)) / 1000 / 60 / 60 / 24);
+                leftTimeUnit = "Days";
+            }
+        }
+        ;
+        value.leftTime = leftTimeCount;
+        value.leftTimeUnit = leftTimeUnit;
+
+    })
+};
 function alma($scope, $http) {
-    $scope.name = "Sanyi";
+    $scope.name = "Fórum";
     function refresh() {
         $http.get('/topics')
             .then(
                 function (response) {
                     console.log(response);
-                    $scope.topics = response.data;
+                    loadTopics($scope, response);
 
                 }
             )
@@ -28,38 +47,7 @@ function alma($scope, $http) {
         .then(
             function (response) {
                 console.log(response);
-                $scope.topics = response.data;
-                // for (var i = 0; i < $scope.topics.length; i++) {
-                //
-                //     var leftTimeUnit = "Minutes";
-                //     var leftTimeCount = Math.floor((new Date() - new Date($scope.topics[i].created)) / 1000 / 60);
-                //     if (leftTimeCount > 60) {
-                //         leftTimeCount = Math.floor((new Date() - new Date($scope.topics[i].created)) / 1000 / 60 / 60);
-                //         leftTimeUnit = "Hours";
-                //         if (leftTimeCount > 24) {
-                //             leftTimeCount = Math.floor((new Date() - new Date($scope.topics[i].created)) / 1000 / 60 / 60 / 24);
-                //             leftTimeUnit = "Days";
-                //         }
-                //     }
-                //     ;
-                //     $scope.topics[i].leftTimeUnit = leftTimeUnit;
-                //     $scope.topics[i].leftTime = leftTimeCount;
-                // }
-                angular.forEach($scope.topics,function (value,key) {
-                        var leftTimeUnit = "Minutes";
-                        var leftTimeCount = Math.floor((new Date() - new Date(value.created)) / 1000 / 60);
-                        if (leftTimeCount > 60) {
-                            leftTimeCount = Math.floor((new Date() - new Date(value.created)) / 1000 / 60 / 60);
-                            leftTimeUnit = "Hours";
-                            if (leftTimeCount > 24) {
-                                leftTimeCount = Math.floor((new Date() - new Date(value.created)) / 1000 / 60 / 60 / 24);
-                                leftTimeUnit = "Days";
-                            }
-                        };
-                        value.leftTime=leftTimeCount;
-                        value.leftTimeUnit=leftTimeUnit;
-                    
-                })
+                loadTopics($scope, response);
             }
         )
         .catch(function (err) {

@@ -254,10 +254,6 @@ hr {
   justify-content: center;
   align-items: center; }
 
-.modal {
-  display: block;
-  background-color: wheat; }
-
 .deleteTopic {
   float: right; }
 
