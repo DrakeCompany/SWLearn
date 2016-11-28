@@ -15,7 +15,7 @@ gulp.task('sass:watch', function () {
 });
 
 gulp.task('server', function() {
-    server.run(['./app.js']);
+    server.run(['./api.js']);
 });
 
 gulp.task('default', ['sass:watch', 'server']);

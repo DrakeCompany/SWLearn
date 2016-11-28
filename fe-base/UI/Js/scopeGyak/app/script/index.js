@@ -8,7 +8,7 @@ angular
 
 
 var loadTopics = function ($scope, response) {
-    $scope.topics = response.data;
+    $scope.topics =  response.data;
     angular.forEach($scope.topics, function (value, key) {
         var leftTimeUnit = "Minutes";
         var leftTimeCount = Math.floor((new Date() - new Date(value.created)) / 1000 / 60);
@@ -26,24 +26,21 @@ var loadTopics = function ($scope, response) {
 
     })
 };
-function alma($scope, $http) {
+function alma($scope, api) {
     $scope.name = "Fórum";
     function refresh() {
-        $http.get('/topics')
+        api.getTopics()
             .then(
                 function (response) {
                     console.log(response);
                     loadTopics($scope, response);
-
                 }
             )
             .catch(function (err) {
                 console.error(err);
             });
-
     }
-
-    $http.get('/topics')
+    api.getTopics()
         .then(
             function (response) {
                 console.log(response);
@@ -53,9 +50,8 @@ function alma($scope, $http) {
         .catch(function (err) {
             console.error(err);
         });
-
     $scope.topicDelete = function (topicId) {
-        $http.delete('/topics/' + topicId)
+        api.deleteTopic(topicId)//$http.delete('/topics/' + topicId)
             .then(function () {
                 refresh();
             })
@@ -72,10 +68,11 @@ function alma($scope, $http) {
         $scope.newTopic.replay = 0;
         $scope.newTopic.leftTime = 0;
         $scope.newTopic.lastReplay = 0;
-        $http.post('/topics', $scope.newTopic).then(function () {
-            refresh();
-            $scope.newTopic = {};
-        });
+        api.newTopic( $scope.newTopic)// $http.post('/topics', $scope.newTopic)
+            .then(function () {
+                refresh();
+                $scope.newTopic = {};
+            });
         $scope.closeModal();
 
     }
@@ -94,16 +91,14 @@ function alma($scope, $http) {
     }
     $scope.modify = false;
     $scope.modTopic = function () {
-        $http.put('/topics/' + $scope.newTopic.id, $scope.newTopic).then(function () {
-            refresh();
-            $scope.displayModal = false;
-            $scope.newTopic = {};
-            $scope.closeModal();
-
-        })
-
+         api.editTopic($scope.newTopic)// $http.put('/topics/' + $scope.newTopic.id, $scope.newTopic)
+            .then(function () {
+                refresh();
+                    $scope.displayModal = false;
+                    $scope.newTopic = {};
+                    $scope.closeModal();
+            })
     }
-
     $scope.openNewTopic = function () {
         $scope.newTopic = {};
         $scope.modify = false;
