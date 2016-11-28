@@ -38,11 +38,13 @@
     </header>
 </div>
 <div class="container">
-    <input type="text" ng-model="title">
+
     <div class="row">
         <div class="col-sm-1 col-md-1" id="leftSpace">
-            <button class="buttonModal" ng-click="displayModalSee()">+</button>
-            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">New topic</button>
+            <!--<button class="buttonModal" ng-click="displayModalSee()">+</button>-->
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"
+                    ng-click="openNewTopic()">New topic
+            </button>
         </div>
         <div class="col-sm-7 col-md-7" id="leftContent">
             <section id="leftMain">
@@ -75,10 +77,10 @@
                                 </button>
                             </div>
                             <div>
-                                <button class="modButton" type="submit" id="modButton"
-                                        ng-click="openTopic(topic)">mod
+
+                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
+                                        data-target="#myModal" ng-click="openTopic(topic)">Modify
                                 </button>
-                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Modify</button>
 
                             </div>
 
@@ -148,27 +150,8 @@
             </section>
         </div>
         <div class="col-sm-1 col-md-1" id="rightSpace">
-            <div class="modal" ng-if="displayModal">
-                Modal
-                <!--<form enctype="text/plain" id="newTopic">-->
-                    <!--<div><label for="titleInput">Title</label><input id="titleInput" type="text"-->
-                                                                     <!--ng-model="newTopic.title">-->
-                    <!--</div>-->
-                    <!--<div><label for="category">category</label>-->
-                        <!--<select id="category" type="text" ng-model="newTopic.category">-->
-                            <!--<option value="General">General</option>-->
-                            <!--<option value="Video">Video</option>-->
-                            <!--<option value="Audio">Audio</option>-->
-                            <!--<option value="Pictures">Pictures</option>-->
-                        <!--</select>-->
-                    <!--</div>-->
-                    <!--<div><label for="brief">brief</label><input id="brief" type="text" ng-model="newTopic.brief"></div>-->
-                    <!--<button id="submit" ng-if="!modify" ng-click="addTopic()">Send</button>-->
-                    <!--<button id="mod" ng-if="modify" ng-click="modTopic()">Modify</button>-->
-                <!--</form>-->
-            </div>
-        </div>
 
+        </div>
 
 
     </div>
@@ -201,71 +184,61 @@
 </footer>
 
 <!-- Modal -->
-<div class="modal fade" id="myModal" role="dialog" >
+<div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog modal-lg">
 
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Topic Modify</h4>
+                <h4 class="modal-title" ng-if="modify">Topic Modify</h4>
+                <h4 class="modal-title" ng-if="!modify">New topic</h4>
             </div>
             <div class="modal-body">
                 <form enctype="text/plain" id="newTopic" class="form-horizontal">
                     <div class="form-group-lg">
                         <label class="control-label col-lg-2 col-sm-2" for="titleInput">Title:</label>
                         <div class="col-sm-10 col-lg-10">
-                            <input type="text" class="form-control" id="titleInput" placeholder="Title" ng-model="newTopic.title">
+                            <input type="text" class="form-control" id="titleInput" placeholder="Title"
+                                   ng-model="newTopic.title">
                         </div>
                     </div>
 
                     <div class="form-group-lg">
                         <label class="control-label col-lg-2 col-sm-2" for="category">Category:</label>
                         <div class="col-sm-10 col-lg-10">
-                           <select class="form-control" id="category" ng-model="newTopic.category">
-                               <option value="General" selected>General</option>
-                               <option value="Video">Video</option>
-                               <option value="Audio">Audio</option>
-                               <option value="Pictures">Pictures</option>
-                           </select>
+                            <select class="form-control" id="category" ng-model="newTopic.category">
+                                <option value="General" selected>General</option>
+                                <option value="Video">Video</option>
+                                <option value="Audio">Audio</option>
+                                <option value="Pictures">Pictures</option>
+                            </select>
                         </div>
                     </div>
 
                     <div class="form-group-lg">
                         <label class="control-label col-lg-2 col-sm-2" for="brief">Title:</label>
                         <div class="col-sm-10 col-lg-10">
-                            <textarea type="text" class="form-control" id="brief" placeholder="Brief" ng-model="newTopic.brief"></textarea>
+                            <textarea type="text" class="form-control" id="brief" placeholder="Brief"
+                                      ng-model="newTopic.brief"></textarea>
                         </div>
                     </div>
 
-                    <!--<div><label for="titleInput">Title</label><input id="titleInput" type="text"-->
-                                                                     <!--ng-model="newTopic.title">-->
-                    <!--</div>-->
-                    <!--<div><label for="category">category</label>-->
-                        <!--<select id="category" type="text" ng-model="newTopic.category">-->
-                            <!--<option value="General">General</option>-->
-                            <!--<option value="Video">Video</option>-->
-                            <!--<option value="Audio">Audio</option>-->
-                            <!--<option value="Pictures">Pictures</option>-->
-                        <!--</select>-->
-                    <!--</div>-->
-                    <!--<div><label for="brief">brief</label><input id="brief" type="text" ng-model="newTopic.brief"></div>-->
-                    <button  class="btn btn-default" ng-if="!modify" ng-click="addTopic()">New topic</button>
-                    <button  class="btn btn-default" ng-if="modify" ng-click="modTopic()">Modify</button>
-                    <!--<button id="submit" ng-if="!modify" ng-click="addTopic()">Send</button>-->
-                    <!--<button id="mod" ng-if="modify" ng-click="modTopic()">Modify</button>-->
+
+                    <button class="btn btn-default" ng-if="!modify" ng-click="addTopic()">New topic</button>
+                    <button class="btn btn-default" ng-if="modify" ng-click="modTopic()" id="modButton">Modify</button>
+
                 </form>
 
             </div>
             <div class="modal-footer">
                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
                     </div>
 
                 </div>
 
-                <!--<button type="submit" class="btn btn-default" data-target="" >Modify</button>-->
             </div>
         </div>
 

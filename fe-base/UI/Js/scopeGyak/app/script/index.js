@@ -65,6 +65,8 @@ function alma($scope, $http) {
     }
     $scope.newTopic = {};
     $scope.addTopic = function () {
+
+        $scope.modify = false;
         $scope.newTopic.created = new Date();
         $scope.newTopic.views = 0;
         $scope.newTopic.replay = 0;
@@ -79,9 +81,10 @@ function alma($scope, $http) {
     }
 
     $scope.displayModal = false;
+
     $scope.closeModal = function () {
         $scope.displayModal = false;
-
+        $('#myModal').modal('hide');
     }
     $scope.openTopic = function (topic) {
         $scope.displayModal = true;
@@ -89,17 +92,21 @@ function alma($scope, $http) {
         $scope.modify = true;
 
     }
+    $scope.modify = false;
     $scope.modTopic = function () {
         $http.put('/topics/' + $scope.newTopic.id, $scope.newTopic).then(function () {
             refresh();
             $scope.displayModal = false;
             $scope.newTopic = {};
+            $scope.closeModal();
+
         })
 
     }
-    $scope.displayModalSee = function () {
+
+    $scope.openNewTopic = function () {
+        $scope.newTopic = {};
         $scope.modify = false;
-        $scope.displayModal = true;
     }
 }
 console.log(angular);
