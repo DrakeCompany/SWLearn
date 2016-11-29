@@ -83,6 +83,8 @@ function alma($scope, api) {
     $scope.closeModal = function () {
         $scope.displayModal = false;
         $('#myModal').modal('hide');
+        refresh();
+
     }
     $scope.openTopic = function (topic) {
         $scope.displayModal = true;
