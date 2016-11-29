@@ -51,7 +51,8 @@ function alma($scope, api) {
             console.error(err);
         });
     $scope.topicDelete = function (topicId) {
-        api.deleteTopic(topicId)//$http.delete('/topics/' + topicId)
+        console.log("delete");
+         api.deleteTopic(topicId)//    $http.delete('/topics/' + topicId)
             .then(function () {
                 refresh();
             })
@@ -87,6 +88,8 @@ function alma($scope, api) {
         $scope.displayModal = true;
         $scope.newTopic = topic;
         $scope.modify = true;
+        console.log("topic:");
+        console.log(topic);
 
     }
     $scope.modify = false;
@@ -102,6 +105,7 @@ function alma($scope, api) {
     $scope.openNewTopic = function () {
         $scope.newTopic = {};
         $scope.modify = false;
+
     }
 }
 console.log(angular);

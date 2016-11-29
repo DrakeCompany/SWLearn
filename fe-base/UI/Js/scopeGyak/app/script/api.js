@@ -5,13 +5,11 @@
  *
  * @param {Object} $http A http service
  */
-
 var apiService = function ($http) {
     /**
      * @param {Number}id
      * @returns {Promise.<Object>}
      */
-
     this.deleteTopic = function(id) {
         return $http.delete('/topics/' + id);
     };
@@ -32,6 +30,7 @@ var apiService = function ($http) {
     this.newTopic = function(topic) {
         return $http.post('/topics', topic);
     };
+
     /**
      * @returns {Promise.<Array.<Object>}
      */
@@ -41,4 +40,3 @@ var apiService = function ($http) {
     }
 
 };
-angular.module('myApp').service('api', apiService);
