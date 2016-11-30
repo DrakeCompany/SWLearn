@@ -15,24 +15,24 @@ $thinLineColor: #ECF0FF;
   outline-width: 4px;
   outline-color: $bodyBackground-color;
   border-bottom: solid 5px #ECF0FF;
-
 }
-
 
 body {
   background-color: $bodyBackground-color;
 }
 
-
 .button.btn.btn-info.btn-lg{
   padding: 0px;
 }
+
 .btn-lg{
   padding: 0px 2px 0px;
 }
+
 button {
   margin:-1px;
 }
+
 .btn-default {
   background-color: $headerDarkerBasic-color;
   border: none;
@@ -60,11 +60,10 @@ button {
   padding-left: 25px;
 }
 
-//display: flex;
-
 .deleteTopic {
   float: right;
 }
+
 .fa-cogs{
         display: none;
         border: none;
@@ -73,6 +72,7 @@ button {
           background-color:$headerBasic-color
   }
 }
+
 .fa-window-close-o{
         display: none;
         border: none;
@@ -81,6 +81,7 @@ button {
           background-color: red;
   }
 }
+
 .firstRightMain {
   width: 320px;
   height: 190px;
@@ -93,11 +94,9 @@ button {
       font-size: large;
     }
   }
-
 }
 
 #footer {
-
   height: 100px;
   background-color: $headerBasic-color;
   color: white;
@@ -123,6 +122,10 @@ button {
   left: -13px;
 }
 
+.glyphicon-time{
+  margin-right: -4px;
+}
+
 .left {
   float: left;
   ul {
@@ -132,7 +135,6 @@ button {
     }
   }
   li {
-
     float: left;
     :before {
       content: '• '
@@ -142,7 +144,6 @@ button {
       padding-left: 45px;
       text-decoration: none;
       color: white;
-
     }
   }
 }
@@ -221,26 +222,10 @@ div.infoArticle {
   border-right: solid 1px white;
 }
 
-//.modModal {
-//  display: none;
-//  background-color: #4cae4c;
-//  position: fixed;
-//  top: 0;
-//  right: 0;
-//  bottom: 0;
-//  left: 0;
-//  z-index: 1050;
-//
-//  overflow: hidden;
-//  -webkit-overflow-scrolling: touch;
-//  outline: 0;
-//
-//}
 .modButton {
   position: relative;
   top: 0;
   left: -6px;
-
 }
 
 .pull-left {
@@ -252,6 +237,7 @@ div.infoArticle {
   padding-top: 8px;
   //padding-left:40px;
 }
+
 .right {
   float: right;
   span {
@@ -274,7 +260,6 @@ div.infoArticle {
   font-size: smaller;
   color: $leftWordColor;
   border-left: solid 1px $thinLineColor;
-
 }
 
 hr {
@@ -292,9 +277,6 @@ hr {
   }
 }
 
-//#rightMain{
-//  color: white;
-//}
 #rightSpace {
   background-color: $bodyBackground-color;
 }
@@ -322,20 +304,16 @@ hr {
 .title {
   font-size: x-large;
   float: left;
-
   font-style: italic;
   color: white;
-
 }
 
 .titleArticle {
-
   display: block;
   text-transform: uppercase;
   font-weight: bolder;
   color: $headerBasic-color;
   padding-bottom: 6px;
-
 }
 
 .titleRightSide {
@@ -346,7 +324,6 @@ hr {
 .titleRightSide span {
   float: right;
   color: #81d2ec;
-
 }
 
 .titleUnder {
@@ -363,7 +340,6 @@ hr {
 
 .secondRightMain {
   .row {
-
     text-align: center;
     div:first-child {
       padding-top: 10px;
@@ -388,7 +364,6 @@ hr {
     }
   }
 }
-
 
 .square {
   width: 20px;

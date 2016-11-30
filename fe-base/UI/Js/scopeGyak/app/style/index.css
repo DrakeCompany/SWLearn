@@ -91,6 +91,9 @@ button {
   transform: scaleX(-1);
   left: -13px; }
 
+.glyphicon-time {
+  margin-right: -4px; }
+
 .left {
   float: left; }
   .left ul {

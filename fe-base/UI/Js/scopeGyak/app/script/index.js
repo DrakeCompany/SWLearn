@@ -8,7 +8,7 @@ angular
 
 
 var loadTopics = function ($scope, response) {
-    $scope.topics =  response.data;
+    $scope.topics = response.data;
     angular.forEach($scope.topics, function (value, key) {
         var leftTimeUnit = "Minutes";
         var leftTimeCount = Math.floor((new Date() - new Date(value.created)) / 1000 / 60);
@@ -21,8 +21,12 @@ var loadTopics = function ($scope, response) {
             }
         }
         ;
+
         value.leftTime = leftTimeCount;
         value.leftTimeUnit = leftTimeUnit;
+        if (!value.like) {
+            value.like = 0;
+        }
 
     })
 };
@@ -40,6 +44,7 @@ function alma($scope, api) {
                 console.error(err);
             });
     }
+
     api.getTopics()
         .then(
             function (response) {
@@ -52,7 +57,7 @@ function alma($scope, api) {
         });
     $scope.topicDelete = function (topicId) {
         console.log("delete");
-         api.deleteTopic(topicId)//    $http.delete('/topics/' + topicId)
+        api.deleteTopic(topicId)//    $http.delete('/topics/' + topicId)
             .then(function () {
                 refresh();
             })
@@ -69,7 +74,8 @@ function alma($scope, api) {
         $scope.newTopic.replay = 0;
         $scope.newTopic.leftTime = 0;
         $scope.newTopic.lastReplay = 0;
-        api.newTopic( $scope.newTopic)// $http.post('/topics', $scope.newTopic)
+        $scope.newTopic.like = 0;
+        api.newTopic($scope.newTopic)// $http.post('/topics', $scope.newTopic)
             .then(function () {
                 refresh();
                 $scope.newTopic = {};
@@ -96,18 +102,25 @@ function alma($scope, api) {
     }
     $scope.modify = false;
     $scope.modTopic = function () {
-         api.editTopic($scope.newTopic)// $http.put('/topics/' + $scope.newTopic.id, $scope.newTopic)
+        api.editTopic($scope.newTopic)// $http.put('/topics/' + $scope.newTopic.id, $scope.newTopic)
             .then(function () {
                 refresh();
-                    $scope.displayModal = false;
-                    $scope.newTopic = {};
-                    $scope.closeModal();
+                $scope.displayModal = false;
+                $scope.newTopic = {};
+                $scope.closeModal();
             })
     }
     $scope.openNewTopic = function () {
         $scope.newTopic = {};
         $scope.modify = false;
-
+    }
+    $scope.likeCount = function (topic) {
+        $scope.likeCountTopic = topic;
+        $scope.likeCountTopic.like++;
+        api.editTopic($scope.likeCountTopic)
+            .then(function () {
+                refresh();
+            })
     }
 }
 console.log(angular);

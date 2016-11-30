@@ -11,7 +11,9 @@ angular.module('myApp').service('api', apiService)
             scope: {
                 topic: '&',// igy egy függvény, = objektum!
                 openTopic: '=',
-                topicDelete: '='
+                topicDelete: '=',
+                likeCount: '='
+
             }
         }
     });
