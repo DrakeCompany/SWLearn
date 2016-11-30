@@ -23,18 +23,14 @@
 
             <div class="rightInfo">
                 <div>
-                    <button class="deleteTopic" type="submit" id="delTopic"
-                            ng-click="topicDelete(topic().id)">x
+                    <button class="deleteTopic fa fa-window-close-o" type="submit" id="delTopic"
+                            ng-click="topicDelete(topic().id)">
                     </button>
                 </div>
                 <div>
-
-                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
-                            data-target="#myModal" ng-click="openTopic(topic())">Modify
-                    </button>
-
+                    <button class="fa fa-cogs"  data-toggle="modal"
+                          data-target="#myModal" ng-click="openTopic(topic())"></button>
                 </div>
-
                 <div class="clearfix"></div>
                 <div class="infoArticle "><span class="glyphicon glyphicon-eye-open">&nbsp;</span><span
                         class="views">{{topic().views}}</span> &nbsp;<span>View</span></div>
@@ -45,6 +41,10 @@
                         class="leftTimeUnit">{{topic().leftTimeUnit}}</span></div>
                 <div class="infoArticle "><span class="glyphicon glyphicon-share-alt">&nbsp;</span><span
                         class="lastReplay">{{topic().lastReplay}}</span><span> Minutes</span></div>
-            </div>
+                <div class="infoArticle "><button class="glyphicon glyphicon-thumbs-up">&nbsp;</button><span
+                        class="lastReplay">{{topic().lastReplay}}</span><span> Likes</span></div>
+                </div>
+                </div>
+
         </article>
 
