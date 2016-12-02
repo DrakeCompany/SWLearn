@@ -15,7 +15,8 @@ function fakt(x) {
 }
 fakt(7);
 
-let x = () => {
+ let x=()=>{
     console.log('es6');
 };
+
 x();

@@ -45,3 +45,5 @@ app.get('/test/:name', function(req, res) { // az url-ben tudsz kérni bármilye
     res.send('Hello ' + req.params.name + '!');
 });
 app.listen(1337);
+
+//futtatás: node express.js :-)
