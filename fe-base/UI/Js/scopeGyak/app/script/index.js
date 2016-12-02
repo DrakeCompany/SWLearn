@@ -65,7 +65,7 @@
             $scope.closeModal();
 
         }
-
+        $scope.categoris=['Audio', 'Video', 'General', 'Photo'];
         $scope.displayModal = false;
 
         $scope.closeModal = function () {
@@ -97,9 +97,10 @@
             $scope.modify = false;
         }
         $scope.likeCount = function (topic) {
-            $scope.likeCountTopic = topic;
-            $scope.likeCountTopic.like++;
-            api.editTopic($scope.likeCountTopic)
+            topic.like++;
+            // $scope.likeCountTopic = topic;
+            // $scope.likeCountTopic.like++;
+            api.editTopic(topic)     //$scope.likeCountTopic)
                 .then(function () {
                     refresh();
                 })
