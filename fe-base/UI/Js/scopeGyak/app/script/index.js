@@ -14,6 +14,7 @@
 
     function alma($scope, api) {
         $scope.name = "Fórum";
+
         function refresh() {
             api.getTopics()
                 .then(
@@ -25,7 +26,7 @@
                 .catch(function (err) {
                     console.error(err);
                 });
-        }
+        };
 
         api.getTopics()
             .then(
@@ -65,7 +66,9 @@
             $scope.closeModal();
 
         }
-        $scope.categoris=['Audio', 'Video', 'General', 'Photo'];
+        $scope.categoris=['Audio', 'Video', 'General', 'Pictures'];
+
+
         $scope.displayModal = false;
 
         $scope.closeModal = function () {
@@ -126,7 +129,18 @@
                     value.like = 0;
                 }
 
-            })
+            });
+            $scope.countCategoris = {};
+                angular.forEach($scope.topics,function (topic) {
+                    if(!$scope.countCategoris[topic.category]){
+                        $scope.countCategoris[topic.category] = [];
+
+                    }
+                    $scope.countCategoris[topic.category].push(topic);
+                });
+            console.log("countCategoris");
+            console.log($scope.countCategoris);
+
         }
     }
     console.log(angular);

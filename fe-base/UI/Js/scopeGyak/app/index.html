@@ -51,13 +51,21 @@
         </div>
         <div class="col-sm-7 col-md-7" id="leftContent">
             <section id="leftMain">
-
-                <div ng-repeat="topic in topics | filter:{title:search} | orderBy: ['-title','like','brief']:reverse" >
-                    <div topic="topic" open-topic = "openTopic" topic-delete = "topicDelete" like-count = "likeCount">
-
-
-                    </div>
+                <div category="value"
+                     category-name="{{key}}"
+                     topic-delete="topicDelete"
+                     open-topic="openTopic"
+                     like-count="likeCount"
+                     ng-repeat="(key, value) in countCategoris">
                 </div>
+
+
+                <!--<div ng-repeat="topic in topics | filter:{title:search} | orderBy: ['-title','like','brief']:reverse" >-->
+                    <!--<div topic="topic" open-topic = "openTopic" topic-delete = "topicDelete" like-count = "likeCount">-->
+                        <!---->
+
+                    <!--</div>-->
+                <!--</div>-->
             </section>
         </div>
         <div class="col-sm-3 col-md-3" id="rightContent">
@@ -168,11 +176,12 @@
                     <div class="form-group-lg">
                         <label class="control-label col-lg-2 col-sm-2" for="category">Category:</label>
                         <div class="col-sm-10 col-lg-10">
-                            <select class="form-control" id="category" ng-model="newTopic.category">
+                            <select class="form-control" id="category" ng-model="newTopic.category" ng-options="category as category for category in categoris">
                                 <!--<option value="General" selected>General</option>-->
                                 <!--<option value="Video">Video</option>-->
                                 <!--<option value="Audio">Audio</option>-->
                                 <!--<option value="Pictures">Pictures</option>-->
+
 
                             </select>
                         </div>
@@ -213,5 +222,6 @@
 <script src="script/index.js"></script>
 <script src="script/api.js"></script>
 <script src="script/topic.js"></script>
+<script src="script/category.js"></script>
 </body>
 </html>

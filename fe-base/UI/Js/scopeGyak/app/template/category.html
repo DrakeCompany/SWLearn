@@ -1,0 +1,15 @@
+<!--<div>{{$scope.countCategoris[topic.category]}}  </div>-->
+
+<!--<div topic="topic"></div>-->
+
+<div class="category" ng-click="open =!open" >
+    {{open ? '-':'+'}} {{categoryName}}
+</div>
+<div ng-show="open">
+    <div topic="topic"
+         open-topic="openTopic"
+         topic-delete="topicDelete"
+         like-count="likeCount"
+         ng-repeat="topic in category">
+    </div>
+</div>
