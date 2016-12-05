@@ -1,0 +1,20 @@
+{
+  "name": "Zsolti utolso",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Ksanci"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/DrakeCompany/SWLearn",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components"
+  ],
+  "dependencies": {
+    "angular": "^1.5.9",
+    "angular-route": "^1.5.9"
+  }
+}
